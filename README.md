@@ -19,11 +19,11 @@ Read more 👉 [Documentation - MkDocs Material Boilerplate]
 
 
 
-## Quick start
+## Quick start on localhost
 
 ```sh
-git clone https://github.com/peaceiris/mkdocs-material-boilerplate.git
-cd mkdocs-material-boilerplate
+git clone https://github.com/accuknox/accuknox-help.git
+cd accuknox-help
 pipenv sync --dev
 pipenv shell
 inv serve --config-file mkdocs-sample.yml
