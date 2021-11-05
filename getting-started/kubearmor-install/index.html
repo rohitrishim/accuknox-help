@@ -13,14 +13,14 @@
         <meta name="author" content="peaceiris">
       
       
-        <link rel="canonical" href="https://mkdocs.peaceiris.com/getting-started/docker/">
+        <link rel="canonical" href="https://mkdocs.peaceiris.com/getting-started/kubearmor-install/">
       
       <link rel="icon" href="../../assets/images/favicon.png">
       <meta name="generator" content="mkdocs-1.2.3, mkdocs-material-7.3.4">
     
     
       
-        <title>Docker - MkDocs Material Boilerplate</title>
+        <title>KubeArmor Install - MkDocs Material Boilerplate</title>
       
     
     
@@ -75,7 +75,7 @@
     <div data-md-component="skip">
       
         
-        <a href="#start_with_docker" class="md-skip">
+        <a href="#deployment_guide" class="md-skip">
           Skip to content
         </a>
       
@@ -107,7 +107,7 @@
         <div class="md-header__topic" data-md-component="header-topic">
           <span class="md-ellipsis">
             
-              Docker
+              KubeArmor Install
             
           </span>
         </div>
@@ -276,11 +276,139 @@
               
   
   
+    
   
-    <li class="md-nav__item">
-      <a href="../kubearmor-install/" class="md-nav__link">
+  
+    <li class="md-nav__item md-nav__item--active">
+      
+      <input class="md-nav__toggle md-toggle" data-md-toggle="toc" type="checkbox" id="__toc">
+      
+      
+        
+      
+      
+        <label class="md-nav__link md-nav__link--active" for="__toc">
+          KubeArmor Install
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <a href="./" class="md-nav__link md-nav__link--active">
         KubeArmor Install
       </a>
+      
+        
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#deployment_steps" class="md-nav__link">
+    Deployment Steps
+  </a>
+  
+    <nav class="md-nav" aria-label="Deployment Steps">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#1_download_and_install_karmor_cli-tool" class="md-nav__link">
+    1. Download and install karmor cli-tool
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#2_install_kubearmor" class="md-nav__link">
+    2. Install KubeArmor
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#3_deploying_sample_app_and_policies" class="md-nav__link">
+    3. Deploying sample app and policies
+  </a>
+  
+    <nav class="md-nav" aria-label="3. Deploying sample app and policies">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#a_deploy_sample_multiubuntu_app" class="md-nav__link">
+    a. Deploy sample multiubuntu app
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#b_deploy_sample_policies" class="md-nav__link">
+    b. Deploy sample policies
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#c_simulate_policy_violation" class="md-nav__link">
+    c. Simulate policy violation
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#4_getting_alertstelemetry_from_kubearmor" class="md-nav__link">
+    4. Getting Alerts/Telemetry from KubeArmor
+  </a>
+  
+    <nav class="md-nav" aria-label="4. Getting Alerts/Telemetry from KubeArmor">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#a_enable_port-forwarding_for_kubearmor_relay" class="md-nav__link">
+    a. Enable port-forwarding for KubeArmor relay
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#b_observing_logs_using_karmor_cli" class="md-nav__link">
+    b. Observing logs using karmor cli
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#k8s_platforms_tested" class="md-nav__link">
+    K8s platforms tested
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+      
     </li>
   
 
@@ -332,58 +460,11 @@
               
   
   
-    
   
-  
-    <li class="md-nav__item md-nav__item--active">
-      
-      <input class="md-nav__toggle md-toggle" data-md-toggle="toc" type="checkbox" id="__toc">
-      
-      
-        
-      
-      
-        <label class="md-nav__link md-nav__link--active" for="__toc">
-          Docker
-          <span class="md-nav__icon md-icon"></span>
-        </label>
-      
-      <a href="./" class="md-nav__link md-nav__link--active">
+    <li class="md-nav__item">
+      <a href="../docker/" class="md-nav__link">
         Docker
       </a>
-      
-        
-<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
-  
-  
-  
-    
-  
-  
-    <label class="md-nav__title" for="__toc">
-      <span class="md-nav__icon md-icon"></span>
-      Table of contents
-    </label>
-    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
-      
-        <li class="md-nav__item">
-  <a href="#public_docker_image" class="md-nav__link">
-    Public docker image
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#docker-compose" class="md-nav__link">
-    docker-compose
-  </a>
-  
-</li>
-      
-    </ul>
-  
-</nav>
-      
     </li>
   
 
@@ -630,15 +711,96 @@
     <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
       
         <li class="md-nav__item">
-  <a href="#public_docker_image" class="md-nav__link">
-    Public docker image
+  <a href="#deployment_steps" class="md-nav__link">
+    Deployment Steps
   </a>
+  
+    <nav class="md-nav" aria-label="Deployment Steps">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#1_download_and_install_karmor_cli-tool" class="md-nav__link">
+    1. Download and install karmor cli-tool
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#2_install_kubearmor" class="md-nav__link">
+    2. Install KubeArmor
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#3_deploying_sample_app_and_policies" class="md-nav__link">
+    3. Deploying sample app and policies
+  </a>
+  
+    <nav class="md-nav" aria-label="3. Deploying sample app and policies">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#a_deploy_sample_multiubuntu_app" class="md-nav__link">
+    a. Deploy sample multiubuntu app
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#b_deploy_sample_policies" class="md-nav__link">
+    b. Deploy sample policies
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#c_simulate_policy_violation" class="md-nav__link">
+    c. Simulate policy violation
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#4_getting_alertstelemetry_from_kubearmor" class="md-nav__link">
+    4. Getting Alerts/Telemetry from KubeArmor
+  </a>
+  
+    <nav class="md-nav" aria-label="4. Getting Alerts/Telemetry from KubeArmor">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#a_enable_port-forwarding_for_kubearmor_relay" class="md-nav__link">
+    a. Enable port-forwarding for KubeArmor relay
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#b_observing_logs_using_karmor_cli" class="md-nav__link">
+    b. Observing logs using karmor cli
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+      </ul>
+    </nav>
   
 </li>
       
         <li class="md-nav__item">
-  <a href="#docker-compose" class="md-nav__link">
-    docker-compose
+  <a href="#k8s_platforms_tested" class="md-nav__link">
+    K8s platforms tested
   </a>
   
 </li>
@@ -655,25 +817,56 @@
             <article class="md-content__inner md-typeset">
               
                 
-                  <a href="https://github.com/peaceiris/mkdocs-material-boilerplate/edit/main/docs_sample/getting-started/docker.md" title="Edit this page" class="md-content__button md-icon">
+                  <a href="https://github.com/peaceiris/mkdocs-material-boilerplate/edit/main/docs_sample/getting-started/kubearmor-install.md" title="Edit this page" class="md-content__button md-icon">
                     <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20.71 7.04c.39-.39.39-1.04 0-1.41l-2.34-2.34c-.37-.39-1.02-.39-1.41 0l-1.84 1.83 3.75 3.75M3 17.25V21h3.75L17.81 9.93l-3.75-3.75L3 17.25z"/></svg>
                   </a>
                 
                 
-                <h1 id="start_with_docker">Start with Docker<a class="headerlink" href="#start_with_docker" title="Permanent link">&para;</a></h1>
-<h2 id="public_docker_image">Public docker image<a class="headerlink" href="#public_docker_image" title="Permanent link">&para;</a></h2>
-<ul>
-<li><a href="https://github.com/peaceiris/mkdocs-material-boilerplate/pkgs/container/mkdocs-material">Package peaceiris/mkdocs-material</a></li>
-</ul>
-<h2 id="docker-compose">docker-compose<a class="headerlink" href="#docker-compose" title="Permanent link">&para;</a></h2>
-<p>Here is an example <a href="https://github.com/peaceiris/mkdocs-material-boilerplate/blob/main/docker-compose.yml">docker-compose.yml</a>
-Please check the latest tag before you go.</p>
-<div class="codehilite"><pre><span></span><code>docker-compose up
+                <h1 id="deployment_guide">Deployment Guide<a class="headerlink" href="#deployment_guide" title="Permanent link">&para;</a></h1>
+<h2 id="deployment_steps">Deployment Steps<a class="headerlink" href="#deployment_steps" title="Permanent link">&para;</a></h2>
+<h3 id="1_download_and_install_karmor_cli-tool">1. Download and install karmor cli-tool<a class="headerlink" href="#1_download_and_install_karmor_cli-tool" title="Permanent link">&para;</a></h3>
+<div class="codehilite"><pre><span></span><code>curl -sfL https://raw.githubusercontent.com/kubearmor/kubearmor-client/main/install.sh | sudo sh -s -- -b /usr/local/bin
 </code></pre></div>
 
-<p>Go to <a href="http://localhost:8000/">http://localhost:8000/</a></p>
-<!-- Internal References -->
-<!-- External References -->
+<h3 id="2_install_kubearmor">2. Install KubeArmor<a class="headerlink" href="#2_install_kubearmor" title="Permanent link">&para;</a></h3>
+<div class="codehilite"><pre><span></span><code>karmor install
+</code></pre></div>
+
+<p>It is assumed that the k8s cluster is already present/reachable and the user has rights to create service-accounts and cluster-role-bindings.</p>
+<h3 id="3_deploying_sample_app_and_policies">3. Deploying sample app and policies<a class="headerlink" href="#3_deploying_sample_app_and_policies" title="Permanent link">&para;</a></h3>
+<h4 id="a_deploy_sample_multiubuntu_app">a. Deploy sample <a href="https://github.com/kubearmor/KubeArmor/blob/master/examples/multiubuntu.md">multiubuntu app</a><a class="headerlink" href="#a_deploy_sample_multiubuntu_app" title="Permanent link">&para;</a></h4>
+<div class="codehilite"><pre><span></span><code>kubectl apply -f https://raw.githubusercontent.com/kubearmor/KubeArmor/master/examples/multiubuntu/multiubuntu-deployment.yaml
+</code></pre></div>
+
+<h4 id="b_deploy_sample_policies">b. Deploy <a href="https://github.com/kubearmor/KubeArmor/blob/master/getting-started/security_policy_examples.md">sample policies</a><a class="headerlink" href="#b_deploy_sample_policies" title="Permanent link">&para;</a></h4>
+<div class="codehilite"><pre><span></span><code>kubectl apply -f https://raw.githubusercontent.com/kubearmor/KubeArmor/master/examples/multiubuntu/security-policies/ksp-group-1-proc-path-block.yaml
+</code></pre></div>
+
+<p>This sample policy blocks execution of <code>sleep</code> command in ubuntu-1 pods.</p>
+<h4 id="c_simulate_policy_violation">c. Simulate policy violation<a class="headerlink" href="#c_simulate_policy_violation" title="Permanent link">&para;</a></h4>
+<div class="codehilite"><pre><span></span><code>$ kubectl -n multiubuntu <span class="nb">exec</span> -it POD_NAME_FOR_UBUNTU_1 -- bash
+<span class="c1"># sleep 1</span>
+<span class="o">(</span>Permission Denied<span class="o">)</span>
+</code></pre></div>
+
+<p>Substitute POD_NAME_FOR_UBUNTU_1 with the actual pod name from <code>kubectl get pods -n multiubuntu</code>.</p>
+<h3 id="4_getting_alertstelemetry_from_kubearmor">4. Getting Alerts/Telemetry from KubeArmor<a class="headerlink" href="#4_getting_alertstelemetry_from_kubearmor" title="Permanent link">&para;</a></h3>
+<h4 id="a_enable_port-forwarding_for_kubearmor_relay">a. Enable port-forwarding for KubeArmor relay<a class="headerlink" href="#a_enable_port-forwarding_for_kubearmor_relay" title="Permanent link">&para;</a></h4>
+<div class="codehilite"><pre><span></span><code>kubectl port-forward -n kube-system svc/kubearmor 32767:32767
+</code></pre></div>
+
+<h4 id="b_observing_logs_using_karmor_cli">b. Observing logs using karmor cli<a class="headerlink" href="#b_observing_logs_using_karmor_cli" title="Permanent link">&para;</a></h4>
+<div class="codehilite"><pre><span></span><code>karmor log
+</code></pre></div>
+
+<h2 id="k8s_platforms_tested">K8s platforms tested<a class="headerlink" href="#k8s_platforms_tested" title="Permanent link">&para;</a></h2>
+<ol>
+<li>Google Kubernetes Engine (GKE) Container Optimized OS (COS)</li>
+<li>GKE Ubuntu image</li>
+<li><a href="https://github.com/kubearmor/KubeArmor/tree/master/deployments/EKS">Amazon Elastic Kubernetes Service (EKS)</a></li>
+<li>Self-managed (on-prem) k8s</li>
+<li>Local k8s engines (microk8s, k3s, minikube)</li>
+</ol>
                 
               
               
@@ -693,7 +886,7 @@ Please check the latest tag before you go.</p>
     <nav class="md-footer__inner md-grid" aria-label="Footer">
       
         
-        <a href="../invoke/" class="md-footer__link md-footer__link--prev" aria-label="Previous: invoke" rel="prev">
+        <a href="../../material-for-mkdocs/" class="md-footer__link md-footer__link--prev" aria-label="Previous: Material for MkDocs" rel="prev">
           <div class="md-footer__button md-icon">
             <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11h12z"/></svg>
           </div>
@@ -702,20 +895,20 @@ Please check the latest tag before you go.</p>
               <span class="md-footer__direction">
                 Previous
               </span>
-              invoke
+              Material for MkDocs
             </div>
           </div>
         </a>
       
       
         
-        <a href="../pip/" class="md-footer__link md-footer__link--next" aria-label="Next: pip" rel="next">
+        <a href="../download-boilerplate/" class="md-footer__link md-footer__link--next" aria-label="Next: Download boilerplate" rel="next">
           <div class="md-footer__title">
             <div class="md-ellipsis">
               <span class="md-footer__direction">
                 Next
               </span>
-              pip
+              Download boilerplate
             </div>
           </div>
           <div class="md-footer__button md-icon">
