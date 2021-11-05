@@ -69,6 +69,7 @@ nav:
   - "Home": "index.md"
   - "Material for MkDocs": "material-for-mkdocs.md"
   - "Getting started":
+      - "Cilium Install": "getting-started/cilium-install.md"
       - "KubeArmor Install": "getting-started/kubearmor-install.md"
       - "Download boilerplate": "getting-started/download-boilerplate.md"
       - "pipenv": "getting-started/pipenv.md"
