@@ -1,16 +1,16 @@
 # Project information
-site_name: "MkDocs Material Boilerplate"
-site_description: "MkDocs Material Boilerplate (Starter Kit) - Deploy documentation to hosting platforms (Netlify, GitHub Pages, GitLab Pages, and AWS Amplify Console) with Docker, pipenv, and GitHub Actions."
-site_author: "peaceiris"
-site_url: "https://mkdocs.peaceiris.com/"
+site_name: "AccuKnox"
+site_description: "AccuKnox is Zero Trust Run-time Kubernetes Security Solution. It provides run-time protection for your Kubernetes and other cloud workloads using Kernel Native Primitives such as AppArmor SELinux and eBPF."
+site_author: "Asif Ali"
+site_url: "https://accuknox.com/"
 
 # Copyright
-copyright: "&copy; 2019 peaceiris"
+copyright: "&copy; 2021 AccuKnox. All Rights Reserved."
 
 # Repository
 repo_name: "GitHub"
-repo_url: "https://github.com/peaceiris/mkdocs-material-boilerplate"
-edit_uri: "https://github.com/peaceiris/mkdocs-material-boilerplate/edit/main/docs_sample"
+repo_url: "https://github.com/accuknox/accuknox-help"
+edit_uri: "https://github.com/accuknox/accuknox-help/edit/main/docs_sample"
 
 # Configuration
 docs_dir: "docs_sample"
@@ -60,9 +60,9 @@ extra:
   manifest: "manifest.json"
   social:
     - icon: "fontawesome/brands/github-alt"
-      link: "https://github.com/peaceiris"
+      link: "https://github.com/accuknox"
     - icon: "fontawesome/brands/twitter"
-      link: "https://twitter.com/piris314en"
+      link: "https://twitter.com/AccuKnox"
 
 # Page tree
 nav:
