@@ -75,7 +75,7 @@
     <div data-md-component="skip">
       
         
-        <a href="#deployment_guide" class="md-skip">
+        <a href="#kubearmor_deployment_guide" class="md-skip">
           Skip to content
         </a>
       
@@ -311,16 +311,16 @@
     <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
       
         <li class="md-nav__item">
-  <a href="#deployment_steps" class="md-nav__link">
-    Deployment Steps
+  <a href="#deployment_steps_for_kubearmor_karmor_cli" class="md-nav__link">
+    Deployment Steps for KubeArmor &amp; karmor CLI
   </a>
   
-    <nav class="md-nav" aria-label="Deployment Steps">
+    <nav class="md-nav" aria-label="Deployment Steps for KubeArmor &amp; karmor CLI">
       <ul class="md-nav__list">
         
           <li class="md-nav__item">
-  <a href="#1_download_and_install_karmor_cli-tool" class="md-nav__link">
-    1. Download and install karmor cli-tool
+  <a href="#1_download_and_install_karmor_cli" class="md-nav__link">
+    1. Download and install karmor CLI
   </a>
   
 </li>
@@ -711,16 +711,16 @@
     <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
       
         <li class="md-nav__item">
-  <a href="#deployment_steps" class="md-nav__link">
-    Deployment Steps
+  <a href="#deployment_steps_for_kubearmor_karmor_cli" class="md-nav__link">
+    Deployment Steps for KubeArmor &amp; karmor CLI
   </a>
   
-    <nav class="md-nav" aria-label="Deployment Steps">
+    <nav class="md-nav" aria-label="Deployment Steps for KubeArmor &amp; karmor CLI">
       <ul class="md-nav__list">
         
           <li class="md-nav__item">
-  <a href="#1_download_and_install_karmor_cli-tool" class="md-nav__link">
-    1. Download and install karmor cli-tool
+  <a href="#1_download_and_install_karmor_cli" class="md-nav__link">
+    1. Download and install karmor CLI
   </a>
   
 </li>
@@ -822,10 +822,10 @@
                   </a>
                 
                 
-                <h1 id="deployment_guide">Deployment Guide<a class="headerlink" href="#deployment_guide" title="Permanent link">&para;</a></h1>
-<h2 id="deployment_steps">Deployment Steps<a class="headerlink" href="#deployment_steps" title="Permanent link">&para;</a></h2>
-<h3 id="1_download_and_install_karmor_cli-tool">1. Download and install karmor cli-tool<a class="headerlink" href="#1_download_and_install_karmor_cli-tool" title="Permanent link">&para;</a></h3>
-<div class="codehilite"><pre><span></span><code>curl -sfL https://raw.githubusercontent.com/kubearmor/kubearmor-client/main/install.sh | sudo sh -s -- -b /usr/local/bin
+                <h1 id="kubearmor_deployment_guide">KubeArmor: Deployment Guide<a class="headerlink" href="#kubearmor_deployment_guide" title="Permanent link">&para;</a></h1>
+<h2 id="deployment_steps_for_kubearmor_karmor_cli">Deployment Steps for KubeArmor &amp; karmor CLI<a class="headerlink" href="#deployment_steps_for_kubearmor_karmor_cli" title="Permanent link">&para;</a></h2>
+<h3 id="1_download_and_install_karmor_cli">1. Download and install karmor CLI<a class="headerlink" href="#1_download_and_install_karmor_cli" title="Permanent link">&para;</a></h3>
+<div class="codehilite"><pre><span></span><code>curl -sfL https://raw.githubusercontent.com/kubearmor/kubearmor-client/main/install.sh <span class="p">|</span> sudo sh -s -- -b /usr/local/bin
 </code></pre></div>
 
 <h3 id="2_install_kubearmor">2. Install KubeArmor<a class="headerlink" href="#2_install_kubearmor" title="Permanent link">&para;</a></h3>
@@ -852,7 +852,7 @@
 <p>Substitute POD_NAME_FOR_UBUNTU_1 with the actual pod name from <code>kubectl get pods -n multiubuntu</code>.</p>
 <h3 id="4_getting_alertstelemetry_from_kubearmor">4. Getting Alerts/Telemetry from KubeArmor<a class="headerlink" href="#4_getting_alertstelemetry_from_kubearmor" title="Permanent link">&para;</a></h3>
 <h4 id="a_enable_port-forwarding_for_kubearmor_relay">a. Enable port-forwarding for KubeArmor relay<a class="headerlink" href="#a_enable_port-forwarding_for_kubearmor_relay" title="Permanent link">&para;</a></h4>
-<div class="codehilite"><pre><span></span><code>kubectl port-forward -n kube-system svc/kubearmor 32767:32767
+<div class="codehilite"><pre><span></span><code>kubectl port-forward -n kube-system svc/kubearmor <span class="m">32767</span>:32767
 </code></pre></div>
 
 <h4 id="b_observing_logs_using_karmor_cli">b. Observing logs using karmor cli<a class="headerlink" href="#b_observing_logs_using_karmor_cli" title="Permanent link">&para;</a></h4>
