@@ -36,6 +36,11 @@
          <changefreq>daily</changefreq>
     </url>
     <url>
+         <loc>https://accuknox.com/getting-started/workspace-manager/</loc>
+         <lastmod>2021-11-06</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
          <loc>https://accuknox.com/open-source/cilium-install/</loc>
          <lastmod>2021-11-06</lastmod>
          <changefreq>daily</changefreq>
