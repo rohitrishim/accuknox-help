@@ -13,14 +13,14 @@
         <meta name="author" content="Asif Ali">
       
       
-        <link rel="canonical" href="https://accuknox.com/getting-started/docker/">
+        <link rel="canonical" href="https://accuknox.com/open-source/what-is-cilium/">
       
       <link rel="icon" href="../../assets/images/favicon.ico">
       <meta name="generator" content="mkdocs-1.2.3, mkdocs-material-7.3.4">
     
     
       
-        <title>Start with Docker - AccuKnox</title>
+        <title>What is Cilium - AccuKnox</title>
       
     
     
@@ -75,7 +75,7 @@
     <div data-md-component="skip">
       
         
-        <a href="#start_with_docker" class="md-skip">
+        <a href="#cilium_ebpf-based_networking_observability_and_security" class="md-skip">
           Skip to content
         </a>
       
@@ -107,7 +107,7 @@
         <div class="md-header__topic" data-md-component="header-topic">
           <span class="md-ellipsis">
             
-              Start with Docker
+              What is Cilium
             
           </span>
         </div>
@@ -233,12 +233,14 @@
 
   
   
+    
+  
   
     
-    <li class="md-nav__item md-nav__item--nested">
+    <li class="md-nav__item md-nav__item--active md-nav__item--nested">
       
       
-        <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_2" type="checkbox" id="__nav_2" >
+        <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_2" type="checkbox" id="__nav_2" checked>
       
       
       
@@ -259,11 +261,47 @@
               
   
   
+    
   
-    <li class="md-nav__item">
-      <a href="../../open-source/what-is-cilium/" class="md-nav__link">
+  
+    <li class="md-nav__item md-nav__item--active">
+      
+      <input class="md-nav__toggle md-toggle" data-md-toggle="toc" type="checkbox" id="__toc">
+      
+      
+      
+        <label class="md-nav__link md-nav__link--active" for="__toc">
+          What is Cilium
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <a href="./" class="md-nav__link md-nav__link--active">
         What is Cilium
       </a>
+      
+        
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#cilium_ebpf-based_networking_observability_and_security" class="md-nav__link">
+    Cilium | eBPF-based Networking, Observability, and Security
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+      
     </li>
   
 
@@ -275,7 +313,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../open-source/cilium-install/" class="md-nav__link">
+      <a href="../cilium-install/" class="md-nav__link">
         Installing Cilium
       </a>
     </li>
@@ -289,7 +327,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../open-source/what-is-kubearmor.md" class="md-nav__link">
+      <a href="../what-is-kubearmor.md" class="md-nav__link">
         What is KubeArmor
       </a>
     </li>
@@ -303,7 +341,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../open-source/kubearmor-install.md" class="md-nav__link">
+      <a href="../kubearmor-install.md" class="md-nav__link">
         Installing KubeArmor
       </a>
     </li>
@@ -317,7 +355,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../open-source/auto-policy-generation.md" class="md-nav__link">
+      <a href="../auto-policy-generation.md" class="md-nav__link">
         Autogenerating Policies
       </a>
     </li>
@@ -347,8 +385,6 @@
   
   
   
-    
-  
   
     <label class="md-nav__title" for="__toc">
       <span class="md-nav__icon md-icon"></span>
@@ -357,15 +393,8 @@
     <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
       
         <li class="md-nav__item">
-  <a href="#public_docker_image" class="md-nav__link">
-    Public docker image
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#docker-compose" class="md-nav__link">
-    docker-compose
+  <a href="#cilium_ebpf-based_networking_observability_and_security" class="md-nav__link">
+    Cilium | eBPF-based Networking, Observability, and Security
   </a>
   
 </li>
@@ -382,25 +411,22 @@
             <article class="md-content__inner md-typeset">
               
                 
-                  <a href="https://github.com/accuknox/accuknox-help/edit/main/docs_sample/getting-started/docker.md" title="Edit this page" class="md-content__button md-icon">
+                  <a href="https://github.com/accuknox/accuknox-help/edit/main/docs_sample/open-source/what-is-cilium.md" title="Edit this page" class="md-content__button md-icon">
                     <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20.71 7.04c.39-.39.39-1.04 0-1.41l-2.34-2.34c-.37-.39-1.02-.39-1.41 0l-1.84 1.83 3.75 3.75M3 17.25V21h3.75L17.81 9.93l-3.75-3.75L3 17.25z"/></svg>
                   </a>
                 
                 
-                <h1 id="start_with_docker">Start with Docker<a class="headerlink" href="#start_with_docker" title="Permanent link">&para;</a></h1>
-<h2 id="public_docker_image">Public docker image<a class="headerlink" href="#public_docker_image" title="Permanent link">&para;</a></h2>
+                  <h1>What is Cilium</h1>
+                
+                <h2 id="cilium_ebpf-based_networking_observability_and_security">Cilium | eBPF-based Networking, Observability, and Security<a class="headerlink" href="#cilium_ebpf-based_networking_observability_and_security" title="Permanent link">&para;</a></h2>
+<p>Cilium is an open source project to provide eBPF-based networking, security, and observability for cloud native environments such as Kubernetes clusters and other container orchestration platforms.</p>
+<p>We are focused on adding value to Cilium in the following areas by using:</p>
 <ul>
-<li><a href="https://github.com/peaceiris/mkdocs-material-boilerplate/pkgs/container/mkdocs-material">Package peaceiris/mkdocs-material</a></li>
+<li>Extensible Identity solution based on SPIFFE standards</li>
+<li>Improving policy audit handling</li>
+<li>Improving policy telemetry and statistics collection to fit realistic scenarios</li>
+<li>Policy discovery tools.</li>
 </ul>
-<h2 id="docker-compose">docker-compose<a class="headerlink" href="#docker-compose" title="Permanent link">&para;</a></h2>
-<p>Here is an example <a href="https://github.com/peaceiris/mkdocs-material-boilerplate/blob/main/docker-compose.yml">docker-compose.yml</a>
-Please check the latest tag before you go.</p>
-<div class="codehilite"><pre><span></span><code>docker-compose up
-</code></pre></div>
-
-<p>Go to <a href="http://localhost:8000/">http://localhost:8000/</a></p>
-<!-- Internal References -->
-<!-- External References -->
                 
               
               
@@ -416,6 +442,41 @@ Please check the latest tag before you go.</p>
       
         
 <footer class="md-footer">
+  
+    <nav class="md-footer__inner md-grid" aria-label="Footer">
+      
+        
+        <a href="../.." class="md-footer__link md-footer__link--prev" aria-label="Previous: Home" rel="prev">
+          <div class="md-footer__button md-icon">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11h12z"/></svg>
+          </div>
+          <div class="md-footer__title">
+            <div class="md-ellipsis">
+              <span class="md-footer__direction">
+                Previous
+              </span>
+              Home
+            </div>
+          </div>
+        </a>
+      
+      
+        
+        <a href="../cilium-install/" class="md-footer__link md-footer__link--next" aria-label="Next: Installing Cilium" rel="next">
+          <div class="md-footer__title">
+            <div class="md-ellipsis">
+              <span class="md-footer__direction">
+                Next
+              </span>
+              Installing Cilium
+            </div>
+          </div>
+          <div class="md-footer__button md-icon">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M4 11v2h12l-5.5 5.5 1.42 1.42L19.84 12l-7.92-7.92L10.5 5.5 16 11H4z"/></svg>
+          </div>
+        </a>
+      
+    </nav>
   
   <div class="md-footer-meta md-typeset">
     <div class="md-footer-meta__inner md-grid">
