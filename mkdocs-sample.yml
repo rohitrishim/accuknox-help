@@ -32,7 +32,7 @@ theme:
   #code: 'Ubuntu Mono'
   #icon:
   #logo: 'images/logo.svg'
-  #favicon: 'assets/images/favicon.ico'
+  favicon: 'assets/images/favicon.ico'
 
 # Extensions
 markdown_extensions:
