@@ -70,9 +70,15 @@ nav:
 # - "Getting started": 
 #     - "What is Accuknox": "getting-started/what-is-accuknox.md"
 
-  - "Getting started with open source components":
+  - "Getting Started with Open Source Components":
       - "What is Cilium": "open-source/what-is-cilium.md"
       - "Installing Cilium": "open-source/cilium-install.md"
       - "What is KubeArmor": "open-source/what-is-kubearmor.md"
       - "Installing KubeArmor": "open-source/kubearmor-install.md"
       - "Autogenerating Policies": "open-source/auto-policy-generation.md"
+
+  - "Getting Started with AccuKnox Components":
+      - "Agent Metrics": "getting-started/agent-metrics.md"
+      - "Workspace Manager":
+          - "What is Workspace Manager": "getting-started/workspace-manager.md"
+          - "What is Channel Integration": "getting-started/channel-integration.md"
