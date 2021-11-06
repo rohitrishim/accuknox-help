@@ -67,11 +67,12 @@ extra:
 # Page tree
 nav:
   - "Home": "index.md"
-  - "Getting started":
-      - "Cilium Install": "getting-started/cilium-install.md"
-      - "KubeArmor Install": "getting-started/kubearmor-install.md"
-      - "Download boilerplate": "getting-started/download-boilerplate.md"
-      - "pipenv": "getting-started/pipenv.md"
-      - "invoke": "getting-started/invoke.md"
-      - "Docker": "getting-started/docker.md"
-      - "pip": "getting-started/pip.md"
+  - "Getting started": 
+      - "What is Accuknox": "getting-started/what-is-accuknox.md"
+      
+
+  - "Getting started with open source components":
+      - "What is Cilium": "open-source/what-is-cilium.md"
+      - "What is KubeArmor": "open-source/what-is-kubearmor.md"
+      - "Installing Cilium and KubeArmor": "open-source/install.md"
+      - "Autogenerating Policies": "open-source/auto-policy-generation.md"
