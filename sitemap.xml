@@ -26,6 +26,11 @@
          <changefreq>daily</changefreq>
     </url>
     <url>
+         <loc>https://accuknox.com/getting-started/agent-metrics/</loc>
+         <lastmod>2021-11-06</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
          <loc>https://accuknox.com/getting-started/channel-integration/</loc>
          <lastmod>2021-11-06</lastmod>
          <changefreq>daily</changefreq>
