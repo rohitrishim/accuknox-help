@@ -13,14 +13,14 @@
         <meta name="author" content="Asif Ali">
       
       
-        <link rel="canonical" href="https://accuknox.com/open-source/kubearmor-install/">
+        <link rel="canonical" href="https://accuknox.com/accuknox-onprem/core-components-deploy/">
       
       <link rel="icon" href="../../assets/images/favicon.ico">
       <meta name="generator" content="mkdocs-1.2.3, mkdocs-material-7.3.4">
     
     
       
-        <title>Installing KubeArmor - AccuKnox</title>
+        <title>how to deploy? - AccuKnox</title>
       
     
     
@@ -75,7 +75,7 @@
     <div data-md-component="skip">
       
         
-        <a href="#kubearmor_deployment_guide" class="md-skip">
+        <a href="#add_accuknox_repository_to_install_core_components_helm_package" class="md-skip">
           Skip to content
         </a>
       
@@ -107,7 +107,7 @@
         <div class="md-header__topic" data-md-component="header-topic">
           <span class="md-ellipsis">
             
-              Installing KubeArmor
+              how to deploy?
             
           </span>
         </div>
@@ -233,14 +233,12 @@
 
   
   
-    
-  
   
     
-    <li class="md-nav__item md-nav__item--active md-nav__item--nested">
+    <li class="md-nav__item md-nav__item--nested">
       
       
-        <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_2" type="checkbox" id="__nav_2" checked>
+        <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_2" type="checkbox" id="__nav_2" >
       
       
       
@@ -263,7 +261,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../what-is-cilium/" class="md-nav__link">
+      <a href="../../open-source/what-is-cilium/" class="md-nav__link">
         What is Cilium
       </a>
     </li>
@@ -277,7 +275,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../cilium-install/" class="md-nav__link">
+      <a href="../../open-source/cilium-install/" class="md-nav__link">
         Installing Cilium
       </a>
     </li>
@@ -291,7 +289,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../what-is-kubearmor/" class="md-nav__link">
+      <a href="../../open-source/what-is-kubearmor/" class="md-nav__link">
         What is KubeArmor
       </a>
     </li>
@@ -303,139 +301,11 @@
               
   
   
-    
   
-  
-    <li class="md-nav__item md-nav__item--active">
-      
-      <input class="md-nav__toggle md-toggle" data-md-toggle="toc" type="checkbox" id="__toc">
-      
-      
-        
-      
-      
-        <label class="md-nav__link md-nav__link--active" for="__toc">
-          Installing KubeArmor
-          <span class="md-nav__icon md-icon"></span>
-        </label>
-      
-      <a href="./" class="md-nav__link md-nav__link--active">
+    <li class="md-nav__item">
+      <a href="../../open-source/kubearmor-install/" class="md-nav__link">
         Installing KubeArmor
       </a>
-      
-        
-<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
-  
-  
-  
-    
-  
-  
-    <label class="md-nav__title" for="__toc">
-      <span class="md-nav__icon md-icon"></span>
-      Table of contents
-    </label>
-    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
-      
-        <li class="md-nav__item">
-  <a href="#deployment_steps_for_kubearmor_karmor_cli" class="md-nav__link">
-    Deployment Steps for KubeArmor &amp; kArmor CLI
-  </a>
-  
-    <nav class="md-nav" aria-label="Deployment Steps for KubeArmor &amp; kArmor CLI">
-      <ul class="md-nav__list">
-        
-          <li class="md-nav__item">
-  <a href="#1_download_and_install_karmor_cli" class="md-nav__link">
-    1. Download and install karmor CLI
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#2_install_kubearmor" class="md-nav__link">
-    2. Install KubeArmor
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#3_deploying_sample_app_and_policies" class="md-nav__link">
-    3. Deploying sample app and policies
-  </a>
-  
-    <nav class="md-nav" aria-label="3. Deploying sample app and policies">
-      <ul class="md-nav__list">
-        
-          <li class="md-nav__item">
-  <a href="#a_deploy_sample_multiubuntu_app" class="md-nav__link">
-    a. Deploy sample multiubuntu app
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#b_deploy_sample_policies" class="md-nav__link">
-    b. Deploy sample policies
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#c_simulate_policy_violation" class="md-nav__link">
-    c. Simulate policy violation
-  </a>
-  
-</li>
-        
-      </ul>
-    </nav>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#4_getting_alertstelemetry_from_kubearmor" class="md-nav__link">
-    4. Getting Alerts/Telemetry from KubeArmor
-  </a>
-  
-    <nav class="md-nav" aria-label="4. Getting Alerts/Telemetry from KubeArmor">
-      <ul class="md-nav__list">
-        
-          <li class="md-nav__item">
-  <a href="#a_enable_port-forwarding_for_kubearmor_relay" class="md-nav__link">
-    a. Enable port-forwarding for KubeArmor relay
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#b_observing_logs_using_karmor_cli" class="md-nav__link">
-    b. Observing logs using karmor cli
-  </a>
-  
-</li>
-        
-      </ul>
-    </nav>
-  
-</li>
-        
-      </ul>
-    </nav>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#k8s_platforms_tested" class="md-nav__link">
-    K8s platforms tested
-  </a>
-  
-</li>
-      
-    </ul>
-  
-</nav>
-      
     </li>
   
 
@@ -447,7 +317,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../auto-policy-generation.md" class="md-nav__link">
+      <a href="../../open-source/auto-policy-generation.md" class="md-nav__link">
         Autogenerating Policies
       </a>
     </li>
@@ -576,12 +446,14 @@
 
   
   
+    
+  
   
     
-    <li class="md-nav__item md-nav__item--nested">
+    <li class="md-nav__item md-nav__item--active md-nav__item--nested">
       
       
-        <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_4" type="checkbox" id="__nav_4" >
+        <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_4" type="checkbox" id="__nav_4" checked>
       
       
       
@@ -656,7 +528,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../accuknox-onprem/istio/" class="md-nav__link">
+      <a href="../istio/" class="md-nav__link">
         What is Istio?
       </a>
     </li>
@@ -670,7 +542,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../accuknox-onprem/istio-deploy/" class="md-nav__link">
+      <a href="../istio-deploy/" class="md-nav__link">
         How to deploy istio?
       </a>
     </li>
@@ -717,7 +589,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../accuknox-onprem/mysql/" class="md-nav__link">
+      <a href="../mysql/" class="md-nav__link">
         What is Percona-MySQL?
       </a>
     </li>
@@ -731,7 +603,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../accuknox-onprem/mysql-deploy/" class="md-nav__link">
+      <a href="../mysql-deploy/" class="md-nav__link">
         How to deploy Percona-MySQL?
       </a>
     </li>
@@ -778,7 +650,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../accuknox-onprem/kafka/" class="md-nav__link">
+      <a href="../kafka/" class="md-nav__link">
         What is Kafka?
       </a>
     </li>
@@ -792,7 +664,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../accuknox-onprem/kafka-deploy/" class="md-nav__link">
+      <a href="../kafka-deploy/" class="md-nav__link">
         How to deploy Kafka?
       </a>
     </li>
@@ -839,7 +711,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../accuknox-onprem/pinot/" class="md-nav__link">
+      <a href="../pinot/" class="md-nav__link">
         What is Pinot?
       </a>
     </li>
@@ -853,7 +725,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../accuknox-onprem/pinot-deploy/" class="md-nav__link">
+      <a href="../pinot-deploy/" class="md-nav__link">
         How to deploy Pinot?
       </a>
     </li>
@@ -879,12 +751,14 @@
               
   
   
+    
+  
   
     
-    <li class="md-nav__item md-nav__item--nested">
+    <li class="md-nav__item md-nav__item--active md-nav__item--nested">
       
       
-        <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_4_2" type="checkbox" id="__nav_4_2" >
+        <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_4_2" type="checkbox" id="__nav_4_2" checked>
       
       
       
@@ -905,11 +779,229 @@
               
   
   
+    
   
-    <li class="md-nav__item">
-      <a href="../../accuknox-onprem/core-components-deploy/" class="md-nav__link">
+  
+    <li class="md-nav__item md-nav__item--active">
+      
+      <input class="md-nav__toggle md-toggle" data-md-toggle="toc" type="checkbox" id="__toc">
+      
+      
+      
+        <label class="md-nav__link md-nav__link--active" for="__toc">
+          how to deploy?
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <a href="./" class="md-nav__link md-nav__link--active">
         how to deploy?
       </a>
+      
+        
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#add_accuknox_repository_to_install_core_components_helm_package" class="md-nav__link">
+    Add accuknox repository to install Core Components helm package:
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#user-management-service" class="md-nav__link">
+    User-management-service:
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#agents-auth-service" class="md-nav__link">
+    Agents-Auth-Service
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#anomaly-detection-management" class="md-nav__link">
+    Anomaly-detection-management
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#anomaly-detection-publisher-core" class="md-nav__link">
+    Anomaly-detection-publisher-core
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#data-protection-mgmt" class="md-nav__link">
+    Data-protection-mgmt
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#data-protection-core" class="md-nav__link">
+    Data-protection-core
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#data-protection-consumer" class="md-nav__link">
+    Data-protection-consumer
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#s3-audit-report-consumer" class="md-nav__link">
+    S3-audit-report-consumer
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#dp-db-audit-log-processor" class="md-nav__link">
+    Dp-db-audit-log-processor
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#data-classification-pipeline-consumer" class="md-nav__link">
+    Data-classification-pipeline-consumer
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#cluster-management-service" class="md-nav__link">
+    Cluster-management-service
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#agent-data-collector" class="md-nav__link">
+    Agent-data-collector
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#cluster-onboarding-service" class="md-nav__link">
+    Cluster-onboarding-service
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#cluster-entity-daemon" class="md-nav__link">
+    Cluster-entity-daemon
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#shared-informer-service" class="md-nav__link">
+    Shared-informer-service
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#data-pipeline-api" class="md-nav__link">
+    Data-pipeline-api
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#datapipeline-temporal" class="md-nav__link">
+    Datapipeline-temporal
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#data-pipeline-samza-jobs" class="md-nav__link">
+    Data-pipeline-samza-jobs
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#feeder-grpc-server" class="md-nav__link">
+    Feeder-grpc-server
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#policy-daemon" class="md-nav__link">
+    Policy-daemon
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#policy-provider-service" class="md-nav__link">
+    Policy-provider-service
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#workload-identity-daemon" class="md-nav__link">
+    Workload-identity-daemon
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#recommended-policy-daemon" class="md-nav__link">
+    Recommended-policy-daemon
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#label-service" class="md-nav__link">
+    Label-service
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#label-daemon" class="md-nav__link">
+    Label-daemon
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#knox-auto-policy" class="md-nav__link">
+    Knox-auto-policy
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+      
     </li>
   
 
@@ -954,7 +1046,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../accuknox-onprem/agents-deploy/" class="md-nav__link">
+      <a href="../agents-deploy/" class="md-nav__link">
         how to deploy?
       </a>
     </li>
@@ -1001,7 +1093,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../accuknox-onprem/ui-deploy/" class="md-nav__link">
+      <a href="../ui-deploy/" class="md-nav__link">
         UI deployment
       </a>
     </li>
@@ -1038,8 +1130,6 @@
   
   
   
-    
-  
   
     <label class="md-nav__title" for="__toc">
       <span class="md-nav__icon md-icon"></span>
@@ -1048,96 +1138,190 @@
     <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
       
         <li class="md-nav__item">
-  <a href="#deployment_steps_for_kubearmor_karmor_cli" class="md-nav__link">
-    Deployment Steps for KubeArmor &amp; kArmor CLI
+  <a href="#add_accuknox_repository_to_install_core_components_helm_package" class="md-nav__link">
+    Add accuknox repository to install Core Components helm package:
   </a>
-  
-    <nav class="md-nav" aria-label="Deployment Steps for KubeArmor &amp; kArmor CLI">
-      <ul class="md-nav__list">
-        
-          <li class="md-nav__item">
-  <a href="#1_download_and_install_karmor_cli" class="md-nav__link">
-    1. Download and install karmor CLI
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#2_install_kubearmor" class="md-nav__link">
-    2. Install KubeArmor
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#3_deploying_sample_app_and_policies" class="md-nav__link">
-    3. Deploying sample app and policies
-  </a>
-  
-    <nav class="md-nav" aria-label="3. Deploying sample app and policies">
-      <ul class="md-nav__list">
-        
-          <li class="md-nav__item">
-  <a href="#a_deploy_sample_multiubuntu_app" class="md-nav__link">
-    a. Deploy sample multiubuntu app
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#b_deploy_sample_policies" class="md-nav__link">
-    b. Deploy sample policies
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#c_simulate_policy_violation" class="md-nav__link">
-    c. Simulate policy violation
-  </a>
-  
-</li>
-        
-      </ul>
-    </nav>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#4_getting_alertstelemetry_from_kubearmor" class="md-nav__link">
-    4. Getting Alerts/Telemetry from KubeArmor
-  </a>
-  
-    <nav class="md-nav" aria-label="4. Getting Alerts/Telemetry from KubeArmor">
-      <ul class="md-nav__list">
-        
-          <li class="md-nav__item">
-  <a href="#a_enable_port-forwarding_for_kubearmor_relay" class="md-nav__link">
-    a. Enable port-forwarding for KubeArmor relay
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#b_observing_logs_using_karmor_cli" class="md-nav__link">
-    b. Observing logs using karmor cli
-  </a>
-  
-</li>
-        
-      </ul>
-    </nav>
-  
-</li>
-        
-      </ul>
-    </nav>
   
 </li>
       
         <li class="md-nav__item">
-  <a href="#k8s_platforms_tested" class="md-nav__link">
-    K8s platforms tested
+  <a href="#user-management-service" class="md-nav__link">
+    User-management-service:
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#agents-auth-service" class="md-nav__link">
+    Agents-Auth-Service
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#anomaly-detection-management" class="md-nav__link">
+    Anomaly-detection-management
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#anomaly-detection-publisher-core" class="md-nav__link">
+    Anomaly-detection-publisher-core
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#data-protection-mgmt" class="md-nav__link">
+    Data-protection-mgmt
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#data-protection-core" class="md-nav__link">
+    Data-protection-core
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#data-protection-consumer" class="md-nav__link">
+    Data-protection-consumer
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#s3-audit-report-consumer" class="md-nav__link">
+    S3-audit-report-consumer
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#dp-db-audit-log-processor" class="md-nav__link">
+    Dp-db-audit-log-processor
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#data-classification-pipeline-consumer" class="md-nav__link">
+    Data-classification-pipeline-consumer
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#cluster-management-service" class="md-nav__link">
+    Cluster-management-service
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#agent-data-collector" class="md-nav__link">
+    Agent-data-collector
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#cluster-onboarding-service" class="md-nav__link">
+    Cluster-onboarding-service
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#cluster-entity-daemon" class="md-nav__link">
+    Cluster-entity-daemon
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#shared-informer-service" class="md-nav__link">
+    Shared-informer-service
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#data-pipeline-api" class="md-nav__link">
+    Data-pipeline-api
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#datapipeline-temporal" class="md-nav__link">
+    Datapipeline-temporal
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#data-pipeline-samza-jobs" class="md-nav__link">
+    Data-pipeline-samza-jobs
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#feeder-grpc-server" class="md-nav__link">
+    Feeder-grpc-server
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#policy-daemon" class="md-nav__link">
+    Policy-daemon
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#policy-provider-service" class="md-nav__link">
+    Policy-provider-service
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#workload-identity-daemon" class="md-nav__link">
+    Workload-identity-daemon
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#recommended-policy-daemon" class="md-nav__link">
+    Recommended-policy-daemon
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#label-service" class="md-nav__link">
+    Label-service
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#label-daemon" class="md-nav__link">
+    Label-daemon
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#knox-auto-policy" class="md-nav__link">
+    Knox-auto-policy
   </a>
   
 </li>
@@ -1154,56 +1338,326 @@
             <article class="md-content__inner md-typeset">
               
                 
-                  <a href="https://github.com/accuknox/accuknox-help/edit/main/docs_sample/open-source/kubearmor-install.md" title="Edit this page" class="md-content__button md-icon">
+                  <a href="https://github.com/accuknox/accuknox-help/edit/main/docs_sample/accuknox-onprem/core-components-deploy.md" title="Edit this page" class="md-content__button md-icon">
                     <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20.71 7.04c.39-.39.39-1.04 0-1.41l-2.34-2.34c-.37-.39-1.02-.39-1.41 0l-1.84 1.83 3.75 3.75M3 17.25V21h3.75L17.81 9.93l-3.75-3.75L3 17.25z"/></svg>
                   </a>
                 
                 
-                <h1 id="kubearmor_deployment_guide">KubeArmor: Deployment Guide<a class="headerlink" href="#kubearmor_deployment_guide" title="Permanent link">&para;</a></h1>
-<h2 id="deployment_steps_for_kubearmor_karmor_cli">Deployment Steps for KubeArmor &amp; kArmor CLI<a class="headerlink" href="#deployment_steps_for_kubearmor_karmor_cli" title="Permanent link">&para;</a></h2>
-<h3 id="1_download_and_install_karmor_cli">1. Download and install karmor CLI<a class="headerlink" href="#1_download_and_install_karmor_cli" title="Permanent link">&para;</a></h3>
-<div class="codehilite"><pre><span></span><code>curl -sfL https://raw.githubusercontent.com/kubearmor/kubearmor-client/main/install.sh <span class="p">|</span> sudo sh -s -- -b /usr/local/bin
+                  <h1>how to deploy?</h1>
+                
+                <h3 id="add_accuknox_repository_to_install_core_components_helm_package">Add accuknox repository to install Core Components helm package:<a class="headerlink" href="#add_accuknox_repository_to_install_core_components_helm_package" title="Permanent link">&para;</a></h3>
+<div class="codehilite"><pre><span></span><code>helm repo add accuknox-onprem https://accuknox-user:5U:u8~wu-b@agents.accuknox.com/repository/accuknox-onprem
+helm repo update
+helm search repo accuknox-onprem
 </code></pre></div>
 
-<h3 id="2_install_kubearmor">2. Install KubeArmor<a class="headerlink" href="#2_install_kubearmor" title="Permanent link">&para;</a></h3>
-<div class="codehilite"><pre><span></span><code>karmor install
+<p><b>Follow the below order to install core components on k8s cluster</b></p>
+<h2 id="user-management-service">User-management-service:<a class="headerlink" href="#user-management-service" title="Permanent link">&para;</a></h2>
+<p>Step 1 : Create namespace has accuknox-dev-user-mgmt</p>
+<p>Eg.</p>
+<div class="codehilite"><pre><span></span><code>kubectl create ns accuknox-dev-user-mgmt
 </code></pre></div>
 
-<p>It is assumed that the k8s cluster is already present/reachable and the user has rights to create service-accounts and cluster-role-bindings.</p>
-<h3 id="3_deploying_sample_app_and_policies">3. Deploying sample app and policies<a class="headerlink" href="#3_deploying_sample_app_and_policies" title="Permanent link">&para;</a></h3>
-<h4 id="a_deploy_sample_multiubuntu_app">a. Deploy sample <a href="https://github.com/kubearmor/KubeArmor/blob/master/examples/multiubuntu.md">multiubuntu app</a><a class="headerlink" href="#a_deploy_sample_multiubuntu_app" title="Permanent link">&para;</a></h4>
-<div class="codehilite"><pre><span></span><code>kubectl apply -f https://raw.githubusercontent.com/kubearmor/KubeArmor/master/examples/multiubuntu/multiubuntu-deployment.yaml
+<p>Step 2 : Install using helm </p>
+<p>Eg.</p>
+<div class="codehilite"><pre><span></span><code>helm upgrade --install user-management-service-0.1.0.tgz -n accuknox-dev-user-mgmt
 </code></pre></div>
 
-<h4 id="b_deploy_sample_policies">b. Deploy <a href="https://github.com/kubearmor/KubeArmor/blob/master/getting-started/security_policy_examples.md">sample policies</a><a class="headerlink" href="#b_deploy_sample_policies" title="Permanent link">&para;</a></h4>
-<div class="codehilite"><pre><span></span><code>kubectl apply -f https://raw.githubusercontent.com/kubearmor/KubeArmor/master/examples/multiubuntu/security-policies/ksp-group-1-proc-path-block.yaml
+<h2 id="agents-auth-service">Agents-Auth-Service<a class="headerlink" href="#agents-auth-service" title="Permanent link">&para;</a></h2>
+<p>Step 1 : Create namespace has accuknox-dev-agents-auth-service</p>
+<p>Eg.</p>
+<div class="codehilite"><pre><span></span><code>kubectl create ns accuknox-dev-agents-auth-service
 </code></pre></div>
 
-<p>This sample policy blocks execution of <code>sleep</code> command in ubuntu-1 pods.</p>
-<h4 id="c_simulate_policy_violation">c. Simulate policy violation<a class="headerlink" href="#c_simulate_policy_violation" title="Permanent link">&para;</a></h4>
-<div class="codehilite"><pre><span></span><code>$ kubectl -n multiubuntu <span class="nb">exec</span> -it POD_NAME_FOR_UBUNTU_1 -- bash
-<span class="c1"># sleep 1</span>
-<span class="o">(</span>Permission Denied<span class="o">)</span>
+<p>Step 2 : Install using helm </p>
+<p>Eg.</p>
+<div class="codehilite"><pre><span></span><code>helm upgrade --install  agents-auth-service-charts-0.1.0.tgz  -n accuknox-dev-agents-auth-service
 </code></pre></div>
 
-<p>Substitute POD_NAME_FOR_UBUNTU_1 with the actual pod name from <code>kubectl get pods -n multiubuntu</code>.</p>
-<h3 id="4_getting_alertstelemetry_from_kubearmor">4. Getting Alerts/Telemetry from KubeArmor<a class="headerlink" href="#4_getting_alertstelemetry_from_kubearmor" title="Permanent link">&para;</a></h3>
-<h4 id="a_enable_port-forwarding_for_kubearmor_relay">a. Enable port-forwarding for KubeArmor relay<a class="headerlink" href="#a_enable_port-forwarding_for_kubearmor_relay" title="Permanent link">&para;</a></h4>
-<div class="codehilite"><pre><span></span><code>kubectl port-forward -n kube-system svc/kubearmor <span class="m">32767</span>:32767
+<h2 id="anomaly-detection-management">Anomaly-detection-management<a class="headerlink" href="#anomaly-detection-management" title="Permanent link">&para;</a></h2>
+<p>Step 1 : Create namespace has  accuknox-dev-ad-mgmt</p>
+<p>Eg. </p>
+<div class="codehilite"><pre><span></span><code>kubectl create ns accuknox-dev-ad-mgmt
 </code></pre></div>
 
-<h4 id="b_observing_logs_using_karmor_cli">b. Observing logs using karmor cli<a class="headerlink" href="#b_observing_logs_using_karmor_cli" title="Permanent link">&para;</a></h4>
-<div class="codehilite"><pre><span></span><code>karmor log
+<p>Step 2 :  Install using helm </p>
+<p>Eg.</p>
+<div class="codehilite"><pre><span></span><code>helm upgrade --install  anomaly-detection-mgmt-chart-0.1.0.tgz  -n accuknox-dev-ad-mgmt
 </code></pre></div>
 
-<h2 id="k8s_platforms_tested">K8s platforms tested<a class="headerlink" href="#k8s_platforms_tested" title="Permanent link">&para;</a></h2>
-<ol>
-<li>Google Kubernetes Engine (GKE) Container Optimized OS (COS)</li>
-<li>GKE Ubuntu image</li>
-<li><a href="https://github.com/kubearmor/KubeArmor/tree/master/deployments/EKS">Amazon Elastic Kubernetes Service (EKS)</a></li>
-<li>Self-managed (on-prem) k8s</li>
-<li>Local k8s engines (microk8s, k3s, minikube)</li>
-</ol>
+<h2 id="anomaly-detection-publisher-core">Anomaly-detection-publisher-core<a class="headerlink" href="#anomaly-detection-publisher-core" title="Permanent link">&para;</a></h2>
+<p>Step 1 : Create namespace has accuknox-dev-ad-core</p>
+<p>Eg.</p>
+<div class="codehilite"><pre><span></span><code>kubectl create ns accuknox-dev-ad-core
+</code></pre></div>
+
+<p>Step 2 : Install using helm </p>
+<p>Eg. </p>
+<div class="codehilite"><pre><span></span><code>helm upgrade --install anomaly-detection-publisher-core-chart-1.0.4.tgz -n accuknox-dev-ad-core
+</code></pre></div>
+
+<h2 id="data-protection-mgmt">Data-protection-mgmt<a class="headerlink" href="#data-protection-mgmt" title="Permanent link">&para;</a></h2>
+<p>Step 1 : Create namespace has accuknox-dev-dp-mgmt</p>
+<p>Eg.</p>
+<div class="codehilite"><pre><span></span><code>kubectl create ns accuknox-dev-dp-mgmt
+</code></pre></div>
+
+<p>Step 2 : Install using helm </p>
+<p>Eg.</p>
+<div class="codehilite"><pre><span></span><code>helm upgrade --install data-protection-mgmt-0.1.0.tgz  -n accuknox-dev-dp-mgmt
+</code></pre></div>
+
+<h2 id="data-protection-core">Data-protection-core<a class="headerlink" href="#data-protection-core" title="Permanent link">&para;</a></h2>
+<p>Step 1 : Create namespace has accuknox-dev-dp-core</p>
+<p>Eg.</p>
+<div class="codehilite"><pre><span></span><code>kubectl create ns accuknox-dev-dp-core
+</code></pre></div>
+
+<p>Step 2 : Install using helm </p>
+<p>Eg. </p>
+<div class="codehilite"><pre><span></span><code>helm upgrade --install data-protection-core-1.0.4.tgz  -n accuknox-dev-dp-core
+</code></pre></div>
+
+<h2 id="data-protection-consumer">Data-protection-consumer<a class="headerlink" href="#data-protection-consumer" title="Permanent link">&para;</a></h2>
+<p>Step 1 : Create namespace has accuknox-dev-dp-core   (Since ns already this step is optional)</p>
+<p>Eg.</p>
+<div class="codehilite"><pre><span></span><code>kubectl create ns accuknox-dev-dp-core
+</code></pre></div>
+
+<p>Step 2 : Install using helm </p>
+<p>Eg.</p>
+<div class="codehilite"><pre><span></span><code>helm upgrade --install data-protection-consumer-0.1.0.tgz  -n accuknox-dev-dp-core
+</code></pre></div>
+
+<h2 id="s3-audit-report-consumer">S3-audit-report-consumer<a class="headerlink" href="#s3-audit-report-consumer" title="Permanent link">&para;</a></h2>
+<p>Step 1 : Create namespace has accuknox-dev-s3-audit-reporter-consumer</p>
+<p>Eg. </p>
+<div class="codehilite"><pre><span></span><code>kubectl create ns accuknox-dev-s3-audit-reporter-consumer
+</code></pre></div>
+
+<p>Step 2 : Install using helm </p>
+<p>Eg.</p>
+<div class="codehilite"><pre><span></span><code>helm upgrade --install s3-audit-reporter-consumer-charts-0.1.0.tgz  -n accuknox-dev-s3-audit-reporter-consumer
+</code></pre></div>
+
+<h2 id="dp-db-audit-log-processor">Dp-db-audit-log-processor<a class="headerlink" href="#dp-db-audit-log-processor" title="Permanent link">&para;</a></h2>
+<p>Step 1 : Create namespace has accuknox-dev-dp-core</p>
+<div class="codehilite"><pre><span></span><code>kubectl create ns accuknox-dev-dp-core
+</code></pre></div>
+
+<p>Step 2 : Install using helm </p>
+<p>Eg. </p>
+<div class="codehilite"><pre><span></span><code>helm upgrade --install dp-db-audit-log-processor-chart-0.1.0.tgz  -n accuknox-dev-dp-core
+</code></pre></div>
+
+<h2 id="data-classification-pipeline-consumer">Data-classification-pipeline-consumer<a class="headerlink" href="#data-classification-pipeline-consumer" title="Permanent link">&para;</a></h2>
+<p>Step 1 : Create namespace has accuknox-dev-data-classification-pipeline-consumer</p>
+<p>Eg.</p>
+<div class="codehilite"><pre><span></span><code>kubectl create ns accuknox-dev-data-classification-pipeline-consumer
+</code></pre></div>
+
+<p>Step 2 : Install using helm </p>
+<p>Eg.</p>
+<div class="codehilite"><pre><span></span><code>helm upgrade --install data-classification-pipeline-consumer-chart-0.1.0.tgz  -n accuknox-dev-data-classification-pipeline-consumer
+</code></pre></div>
+
+<h2 id="cluster-management-service">Cluster-management-service<a class="headerlink" href="#cluster-management-service" title="Permanent link">&para;</a></h2>
+<p>Step 1 : Create namespace has accuknox-dev-cluster-mgmt</p>
+<p>Eg.</p>
+<div class="codehilite"><pre><span></span><code>kubectl create ns accuknox-dev-cluster-mgmt
+</code></pre></div>
+
+<p>Step 2 : Install using helm </p>
+<p>Eg. </p>
+<div class="codehilite"><pre><span></span><code>helm upgrade --install cluster-management-service-chart-0.1.0.tgz  -n accuknox-dev-cluster-mgmt
+</code></pre></div>
+
+<h2 id="agent-data-collector">Agent-data-collector<a class="headerlink" href="#agent-data-collector" title="Permanent link">&para;</a></h2>
+<p>Step 1 : Create namespace has accuknox-dev-adc
+Eg. </p>
+<div class="codehilite"><pre><span></span><code>kubectl create ns accuknox-dev-adc
+</code></pre></div>
+
+<p>Step 2 : Install using helm </p>
+<p>Eg.</p>
+<div class="codehilite"><pre><span></span><code>helm upgrade --install agent-data-collector-charts-0.1.0.tgz   -n accuknox-dev-adc
+</code></pre></div>
+
+<h2 id="cluster-onboarding-service">Cluster-onboarding-service<a class="headerlink" href="#cluster-onboarding-service" title="Permanent link">&para;</a></h2>
+<p>Step 1 : Create namespace has accuknox-dev-cluster-onboard</p>
+<p>Eg. </p>
+<div class="codehilite"><pre><span></span><code>kubectl create ns accuknox-dev-cluster-onboard
+</code></pre></div>
+
+<p>Step 2 : Install using helm </p>
+<p>Eg. </p>
+<div class="codehilite"><pre><span></span><code>helm upgrade --install cluster-onboarding-service-0.1.0.tgz  -n accuknox-dev-cluster-onboard
+</code></pre></div>
+
+<h2 id="cluster-entity-daemon">Cluster-entity-daemon<a class="headerlink" href="#cluster-entity-daemon" title="Permanent link">&para;</a></h2>
+<p>Step 1 : Create namespace has accuknox-dev-cluster-entity-daemon</p>
+<p>Eg: </p>
+<div class="codehilite"><pre><span></span><code>kubectl create ns accuknox-dev-cluster-entity-daemon
+</code></pre></div>
+
+<p>Step 2 : Install using helm </p>
+<p>Eg.</p>
+<div class="codehilite"><pre><span></span><code>helm upgrade --install cluster-entity-daemon-chart-0.1.0.tgz    -n accuknox-dev-cluster-entity-daemon
+</code></pre></div>
+
+<h2 id="shared-informer-service">Shared-informer-service<a class="headerlink" href="#shared-informer-service" title="Permanent link">&para;</a></h2>
+<p>Step 1 : Create namespace has accuknox-dev-shared-informer-service</p>
+<p>Eg.</p>
+<div class="codehilite"><pre><span></span><code>kubectl create ns accuknox-dev-shared-informer-service
+</code></pre></div>
+
+<p>Step 2 : Install using helm </p>
+<p>Eg.</p>
+<div class="codehilite"><pre><span></span><code>helm upgrade --install shared-informer-service-chart-0.1.0.tgz  -n accuknox-dev-shared-informer-service
+</code></pre></div>
+
+<h2 id="data-pipeline-api">Data-pipeline-api<a class="headerlink" href="#data-pipeline-api" title="Permanent link">&para;</a></h2>
+<p>Step 1 : Create namespace has accuknox-dev-datapipeline-api</p>
+<p>Eg. </p>
+<div class="codehilite"><pre><span></span><code>kubectl create ns accuknox-dev-datapipeline-api
+</code></pre></div>
+
+<p>Step 2 : Install using helm </p>
+<p>Eg.</p>
+<div class="codehilite"><pre><span></span><code>helm upgrade --install data-pipeline-api-charts-0.1.0.tgz -n accuknox-dev-datapipeline-api
+</code></pre></div>
+
+<h2 id="datapipeline-temporal">Datapipeline-temporal<a class="headerlink" href="#datapipeline-temporal" title="Permanent link">&para;</a></h2>
+<p>Step 1 : Create namespace has accuknox-dev-temporal</p>
+<p>Eg.</p>
+<div class="codehilite"><pre><span></span><code>kubectl create ns accuknox-dev-temporal
+</code></pre></div>
+
+<p>Step 2 : Install using helm </p>
+<p>Eg. </p>
+<div class="codehilite"><pre><span></span><code>helm upgrade --install datapipeline-temporal-charts-0.1.0.tgz  -n accuknox-dev-temporal
+</code></pre></div>
+
+<h2 id="data-pipeline-samza-jobs">Data-pipeline-samza-jobs<a class="headerlink" href="#data-pipeline-samza-jobs" title="Permanent link">&para;</a></h2>
+<p>Step 1 : Create namespace has accuknox-dev-samzajobs</p>
+<p>Eg. </p>
+<div class="codehilite"><pre><span></span><code>kubectl create ns accuknox-dev-samzajobs
+</code></pre></div>
+
+<p>Step 2 : Install using helm </p>
+<p>Eg.</p>
+<div class="codehilite"><pre><span></span><code>helm upgrade --install datapipeline-samza-0.1.0.tgz  -n accuknox-dev-samzajobs
+</code></pre></div>
+
+<h2 id="feeder-grpc-server">Feeder-grpc-server<a class="headerlink" href="#feeder-grpc-server" title="Permanent link">&para;</a></h2>
+<p>Step 1 : Create namespace has accuknox-dev-feeder-grpc-server</p>
+<p>Eg. </p>
+<div class="codehilite"><pre><span></span><code>kubectl create ns accuknox-dev-feeder-grpc-server
+</code></pre></div>
+
+<p>Step 2 : Install using helm </p>
+<p>Eg.</p>
+<div class="codehilite"><pre><span></span><code>helm upgrade --install feeder-grpc-server-chart-0.1.0.tgz -n accuknox-dev-feeder-grpc-server
+</code></pre></div>
+
+<p>Policy-service</p>
+<p>Step 1 : Create namespace has accuknox-dev-policy-service</p>
+<p>Eg. </p>
+<div class="codehilite"><pre><span></span><code>kubectl create ns accuknox-dev-policy-service
+</code></pre></div>
+
+<p>Step 2 : Install using helm </p>
+<p>Eg.</p>
+<div class="codehilite"><pre><span></span><code>helm upgrade --install policy-service-charts-0.1.0.tgz  -n accuknox-dev-policy-service
+</code></pre></div>
+
+<h2 id="policy-daemon">Policy-daemon<a class="headerlink" href="#policy-daemon" title="Permanent link">&para;</a></h2>
+<p>Step 1 : Create namespace has accuknox-dev-policy-daemon</p>
+<p>Eg. </p>
+<div class="codehilite"><pre><span></span><code>kubectl create ns accuknox-dev-policy-daemon
+</code></pre></div>
+
+<p>Step 2 : Install using helm </p>
+<p>Eg. </p>
+<div class="codehilite"><pre><span></span><code>helm upgrade --install policy-daemon-charts-0.1.0.tgz  -n accuknox-dev-policy-daemon
+</code></pre></div>
+
+<h2 id="policy-provider-service">Policy-provider-service<a class="headerlink" href="#policy-provider-service" title="Permanent link">&para;</a></h2>
+<p>Step 1 : Create namespace has accuknox-dev-policy-provider-service</p>
+<p>Eg.</p>
+<div class="codehilite"><pre><span></span><code>kubectl create ns accuknox-dev-policy-provider-service
+</code></pre></div>
+
+<p>Step 2 : Install using helm </p>
+<p>Eg.</p>
+<div class="codehilite"><pre><span></span><code>helm upgrade --install policy-provider-service-0.1.0.tgz -n accuknox-dev-policy-provider-service
+</code></pre></div>
+
+<h2 id="workload-identity-daemon">Workload-identity-daemon<a class="headerlink" href="#workload-identity-daemon" title="Permanent link">&para;</a></h2>
+<p>Step 1 : Create namespace has accuknox-dev-workload-identity-daemon</p>
+<p>Eg.</p>
+<div class="codehilite"><pre><span></span><code>kubectl create ns accuknox-dev-workload-identity-daemon
+</code></pre></div>
+
+<p>Step 2 : Install using helm </p>
+<p>Eg.</p>
+<div class="codehilite"><pre><span></span><code>helm upgrade --install workload-identity-daemon-chart-0.1.0.tgz  -n accuknox-dev-workload-identity-daemon
+</code></pre></div>
+
+<h2 id="recommended-policy-daemon">Recommended-policy-daemon<a class="headerlink" href="#recommended-policy-daemon" title="Permanent link">&para;</a></h2>
+<p>Step 1 : Create namespace has accuknox-dev-recommended-policy-daemon</p>
+<p>Eg.</p>
+<div class="codehilite"><pre><span></span><code>kubectl create ns accuknox-dev-recommended-policy-daemon
+</code></pre></div>
+
+<p>Step 2 : Install using helm </p>
+<p>Eg.</p>
+<div class="codehilite"><pre><span></span><code>helm upgrade --install recommended-policy-daemon-1.0.4.tgz -n accuknox-dev-recommended-policy-daemon
+</code></pre></div>
+
+<p>Discoveredpolicy-daemon</p>
+<p>Step 1 : Create namespace has accuknox-dev-discovered-policy-daemon</p>
+<p>Eg. </p>
+<div class="codehilite"><pre><span></span><code>kubectl create ns accuknox-dev-discovered-policy-daemon
+</code></pre></div>
+
+<p>Step 2 : Install using helm </p>
+<p>Eg.</p>
+<div class="codehilite"><pre><span></span><code>helm upgrade --install discoveredpolicy-daemon-charts-0.1.0.tgz -n accuknox-dev-discovered-policy-daemon
+</code></pre></div>
+
+<h2 id="label-service">Label-service<a class="headerlink" href="#label-service" title="Permanent link">&para;</a></h2>
+<p>Step 1 : Create namespace has accuknox-dev-label-service</p>
+<p>Eg.</p>
+<div class="codehilite"><pre><span></span><code>kubectl create ns accuknox-dev-label-service
+</code></pre></div>
+
+<p>Step 2 : Install using helm </p>
+<p>Eg.</p>
+<div class="codehilite"><pre><span></span><code>helm upgrade --install label-service-chart-0.1.0.tgz  -n accuknox-dev-label-service
+</code></pre></div>
+
+<h2 id="label-daemon">Label-daemon<a class="headerlink" href="#label-daemon" title="Permanent link">&para;</a></h2>
+<p>Step 1 : Create namespace has accuknox-dev-label-daemon</p>
+<p>Eg.</p>
+<div class="codehilite"><pre><span></span><code>kubectl create ns accuknox-dev-label-daemon
+</code></pre></div>
+
+<p>Step 2 : Install using helm </p>
+<p>Eg. </p>
+<div class="codehilite"><pre><span></span><code>helm upgrade --install label-daemon-charts-1.0.4.tgz  -n accuknox-dev-label-daemon
+</code></pre></div>
+
+<h2 id="knox-auto-policy">Knox-auto-policy<a class="headerlink" href="#knox-auto-policy" title="Permanent link">&para;</a></h2>
+<p>Step 1 : Create namespace has accuknox-dev-knoxautopolicy</p>
+<p>Eg.</p>
+<div class="codehilite"><pre><span></span><code>kubectl create ns accuknox-dev-knoxautopolicy
+</code></pre></div>
+
+<p>Step 2 : Install using helm </p>
+<p>Eg. </p>
+<div class="codehilite"><pre><span></span><code>helm upgrade --install knox-auto-policy-chart.tgz  -n accuknox-dev-knoxautopolicy
+</code></pre></div>
                 
               
               
@@ -1223,7 +1677,7 @@
     <nav class="md-footer__inner md-grid" aria-label="Footer">
       
         
-        <a href="../what-is-kubearmor/" class="md-footer__link md-footer__link--prev" aria-label="Previous: What is KubeArmor" rel="prev">
+        <a href="../pinot-deploy/" class="md-footer__link md-footer__link--prev" aria-label="Previous: How to deploy Pinot?" rel="prev">
           <div class="md-footer__button md-icon">
             <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11h12z"/></svg>
           </div>
@@ -1232,20 +1686,20 @@
               <span class="md-footer__direction">
                 Previous
               </span>
-              What is KubeArmor
+              How to deploy Pinot?
             </div>
           </div>
         </a>
       
       
         
-        <a href="../../getting-started/agent-metrics/" class="md-footer__link md-footer__link--next" aria-label="Next: Agent Metrics" rel="next">
+        <a href="../agents-deploy/" class="md-footer__link md-footer__link--next" aria-label="Next: how to deploy?" rel="next">
           <div class="md-footer__title">
             <div class="md-ellipsis">
               <span class="md-footer__direction">
                 Next
               </span>
-              Agent Metrics
+              how to deploy?
             </div>
           </div>
           <div class="md-footer__button md-icon">
