@@ -1,0 +1,508 @@
+### Add accuknox repository to install Core Components helm package:
+
+```sh
+helm repo add accuknox-onprem https://accuknox-user:5U:u8~wu-b@agents.accuknox.com/repository/accuknox-onprem
+helm repo update
+helm search repo accuknox-onprem
+```
+
+
+<b>Follow the below order to install core components on k8s cluster</b>
+
+## User-management-service:
+
+Step 1 : Create namespace has accuknox-dev-user-mgmt
+
+Eg.
+
+```sh
+kubectl create ns accuknox-dev-user-mgmt
+```
+Step 2 : Install using helm 
+
+Eg.
+
+```sh 
+helm upgrade --install user-management-service-0.1.0.tgz -n accuknox-dev-user-mgmt
+```
+
+## Agents-Auth-Service
+
+Step 1 : Create namespace has accuknox-dev-agents-auth-service
+
+Eg.
+
+```sh
+kubectl create ns accuknox-dev-agents-auth-service
+```
+
+Step 2 : Install using helm 
+
+Eg.
+
+```sh
+helm upgrade --install  agents-auth-service-charts-0.1.0.tgz  -n accuknox-dev-agents-auth-service
+```
+
+## Anomaly-detection-management
+
+Step 1 : Create namespace has  accuknox-dev-ad-mgmt
+
+Eg. 
+
+```sh
+kubectl create ns accuknox-dev-ad-mgmt
+```
+
+Step 2 :  Install using helm 
+
+Eg.
+
+```sh
+helm upgrade --install  anomaly-detection-mgmt-chart-0.1.0.tgz  -n accuknox-dev-ad-mgmt
+```
+
+## Anomaly-detection-publisher-core
+
+Step 1 : Create namespace has accuknox-dev-ad-core
+
+Eg.
+```sh
+kubectl create ns accuknox-dev-ad-core
+```
+Step 2 : Install using helm 
+
+Eg. 
+
+```sh
+helm upgrade --install anomaly-detection-publisher-core-chart-1.0.4.tgz -n accuknox-dev-ad-core
+```
+
+## Data-protection-mgmt
+
+Step 1 : Create namespace has accuknox-dev-dp-mgmt
+
+Eg.
+
+```sh
+kubectl create ns accuknox-dev-dp-mgmt
+```
+
+Step 2 : Install using helm 
+
+Eg.
+
+```sh
+helm upgrade --install data-protection-mgmt-0.1.0.tgz  -n accuknox-dev-dp-mgmt
+```
+
+## Data-protection-core
+
+Step 1 : Create namespace has accuknox-dev-dp-core
+
+Eg.
+
+```sh
+kubectl create ns accuknox-dev-dp-core
+```
+
+Step 2 : Install using helm 
+         
+Eg. 
+
+```sh
+helm upgrade --install data-protection-core-1.0.4.tgz  -n accuknox-dev-dp-core
+```
+
+## Data-protection-consumer
+
+Step 1 : Create namespace has accuknox-dev-dp-core   (Since ns already this step is optional)
+
+Eg.
+
+```sh
+kubectl create ns accuknox-dev-dp-core
+```
+
+Step 2 : Install using helm 
+
+Eg.
+
+```sh
+helm upgrade --install data-protection-consumer-0.1.0.tgz  -n accuknox-dev-dp-core
+```
+
+## S3-audit-report-consumer
+
+Step 1 : Create namespace has accuknox-dev-s3-audit-reporter-consumer
+
+Eg. 
+
+```sh
+kubectl create ns accuknox-dev-s3-audit-reporter-consumer
+```
+
+Step 2 : Install using helm 
+
+Eg.
+
+```sh
+helm upgrade --install s3-audit-reporter-consumer-charts-0.1.0.tgz  -n accuknox-dev-s3-audit-reporter-consumer
+```
+
+## Dp-db-audit-log-processor
+
+Step 1 : Create namespace has accuknox-dev-dp-core
+
+```sh
+kubectl create ns accuknox-dev-dp-core
+```
+
+Step 2 : Install using helm 
+
+Eg. 
+
+```sh
+helm upgrade --install dp-db-audit-log-processor-chart-0.1.0.tgz  -n accuknox-dev-dp-core
+```
+
+## Data-classification-pipeline-consumer
+
+Step 1 : Create namespace has accuknox-dev-data-classification-pipeline-consumer
+
+Eg.
+
+```sh
+kubectl create ns accuknox-dev-data-classification-pipeline-consumer
+```
+
+Step 2 : Install using helm 
+
+Eg.
+
+```sh
+helm upgrade --install data-classification-pipeline-consumer-chart-0.1.0.tgz  -n accuknox-dev-data-classification-pipeline-consumer
+```
+
+## Cluster-management-service
+
+Step 1 : Create namespace has accuknox-dev-cluster-mgmt
+
+Eg.
+
+```sh
+kubectl create ns accuknox-dev-cluster-mgmt
+```
+
+Step 2 : Install using helm 
+
+Eg. 
+
+```sh
+helm upgrade --install cluster-management-service-chart-0.1.0.tgz  -n accuknox-dev-cluster-mgmt
+```
+
+## Agent-data-collector
+
+Step 1 : Create namespace has accuknox-dev-adc
+Eg. 
+
+```sh
+kubectl create ns accuknox-dev-adc
+```
+
+Step 2 : Install using helm 
+
+Eg.
+
+```sh
+helm upgrade --install agent-data-collector-charts-0.1.0.tgz   -n accuknox-dev-adc
+```
+
+## Cluster-onboarding-service
+
+Step 1 : Create namespace has accuknox-dev-cluster-onboard
+         
+Eg. 
+
+```sh
+kubectl create ns accuknox-dev-cluster-onboard
+```
+
+Step 2 : Install using helm 
+
+Eg. 
+
+```sh
+helm upgrade --install cluster-onboarding-service-0.1.0.tgz  -n accuknox-dev-cluster-onboard
+```
+
+## Cluster-entity-daemon
+
+Step 1 : Create namespace has accuknox-dev-cluster-entity-daemon
+
+Eg: 
+
+```sh
+kubectl create ns accuknox-dev-cluster-entity-daemon
+```
+
+Step 2 : Install using helm 
+
+Eg.
+
+```sh
+helm upgrade --install cluster-entity-daemon-chart-0.1.0.tgz    -n accuknox-dev-cluster-entity-daemon
+```
+
+## Shared-informer-service
+
+Step 1 : Create namespace has accuknox-dev-shared-informer-service
+
+Eg.
+
+```sh
+kubectl create ns accuknox-dev-shared-informer-service
+```
+
+Step 2 : Install using helm 
+
+Eg.
+
+```sh
+helm upgrade --install shared-informer-service-chart-0.1.0.tgz  -n accuknox-dev-shared-informer-service
+```
+
+## Data-pipeline-api
+
+Step 1 : Create namespace has accuknox-dev-datapipeline-api
+
+Eg. 
+
+```sh
+kubectl create ns accuknox-dev-datapipeline-api
+```
+
+Step 2 : Install using helm 
+
+Eg.
+
+```sh
+helm upgrade --install data-pipeline-api-charts-0.1.0.tgz -n accuknox-dev-datapipeline-api
+```
+
+## Datapipeline-temporal
+
+Step 1 : Create namespace has accuknox-dev-temporal
+
+Eg.
+
+```sh
+kubectl create ns accuknox-dev-temporal
+```
+
+Step 2 : Install using helm 
+
+Eg. 
+
+```sh
+helm upgrade --install datapipeline-temporal-charts-0.1.0.tgz  -n accuknox-dev-temporal
+```
+
+## Data-pipeline-samza-jobs
+
+Step 1 : Create namespace has accuknox-dev-samzajobs
+
+Eg. 
+
+```sh
+kubectl create ns accuknox-dev-samzajobs
+```
+
+Step 2 : Install using helm 
+
+Eg.
+
+```sh
+helm upgrade --install datapipeline-samza-0.1.0.tgz  -n accuknox-dev-samzajobs
+```
+
+## Feeder-grpc-server
+
+Step 1 : Create namespace has accuknox-dev-feeder-grpc-server
+
+Eg. 
+
+```sh
+kubectl create ns accuknox-dev-feeder-grpc-server
+```
+
+Step 2 : Install using helm 
+
+Eg.
+
+```sh
+helm upgrade --install feeder-grpc-server-chart-0.1.0.tgz -n accuknox-dev-feeder-grpc-server
+```
+
+Policy-service
+
+Step 1 : Create namespace has accuknox-dev-policy-service
+
+Eg. 
+
+```sh
+kubectl create ns accuknox-dev-policy-service
+```
+
+Step 2 : Install using helm 
+
+Eg.
+
+```sh
+helm upgrade --install policy-service-charts-0.1.0.tgz  -n accuknox-dev-policy-service
+```
+
+## Policy-daemon
+
+Step 1 : Create namespace has accuknox-dev-policy-daemon
+
+Eg. 
+
+```sh
+kubectl create ns accuknox-dev-policy-daemon
+```
+
+Step 2 : Install using helm 
+
+Eg. 
+
+```sh
+helm upgrade --install policy-daemon-charts-0.1.0.tgz  -n accuknox-dev-policy-daemon
+```
+
+## Policy-provider-service
+
+Step 1 : Create namespace has accuknox-dev-policy-provider-service
+
+Eg.
+
+```sh
+kubectl create ns accuknox-dev-policy-provider-service
+```
+
+Step 2 : Install using helm 
+
+Eg.
+
+```sh
+helm upgrade --install policy-provider-service-0.1.0.tgz -n accuknox-dev-policy-provider-service
+```
+
+## Workload-identity-daemon
+
+Step 1 : Create namespace has accuknox-dev-workload-identity-daemon
+
+Eg.
+
+```sh
+kubectl create ns accuknox-dev-workload-identity-daemon
+```
+
+Step 2 : Install using helm 
+
+Eg.
+
+```sh
+helm upgrade --install workload-identity-daemon-chart-0.1.0.tgz  -n accuknox-dev-workload-identity-daemon
+```
+
+## Recommended-policy-daemon
+
+Step 1 : Create namespace has accuknox-dev-recommended-policy-daemon
+
+Eg.
+
+```sh
+kubectl create ns accuknox-dev-recommended-policy-daemon
+```
+
+Step 2 : Install using helm 
+
+Eg.
+
+```sh
+helm upgrade --install recommended-policy-daemon-1.0.4.tgz -n accuknox-dev-recommended-policy-daemon
+```
+
+Discoveredpolicy-daemon
+
+Step 1 : Create namespace has accuknox-dev-discovered-policy-daemon
+
+Eg. 
+
+```sh
+kubectl create ns accuknox-dev-discovered-policy-daemon
+```
+
+Step 2 : Install using helm 
+
+Eg.
+
+```sh
+helm upgrade --install discoveredpolicy-daemon-charts-0.1.0.tgz -n accuknox-dev-discovered-policy-daemon
+```
+
+## Label-service
+
+Step 1 : Create namespace has accuknox-dev-label-service
+
+Eg.
+
+```sh
+kubectl create ns accuknox-dev-label-service
+```
+
+Step 2 : Install using helm 
+
+Eg.
+
+```sh
+helm upgrade --install label-service-chart-0.1.0.tgz  -n accuknox-dev-label-service
+```
+
+## Label-daemon
+
+Step 1 : Create namespace has accuknox-dev-label-daemon
+
+Eg.
+
+```sh
+kubectl create ns accuknox-dev-label-daemon
+```
+
+Step 2 : Install using helm 
+
+Eg. 
+
+```sh
+helm upgrade --install label-daemon-charts-1.0.4.tgz  -n accuknox-dev-label-daemon
+```
+
+## Knox-auto-policy
+
+Step 1 : Create namespace has accuknox-dev-knoxautopolicy
+
+Eg.
+
+```sh
+kubectl create ns accuknox-dev-knoxautopolicy
+```
+
+Step 2 : Install using helm 
+
+Eg. 
+
+```sh
+helm upgrade --install knox-auto-policy-chart.tgz  -n accuknox-dev-knoxautopolicy
+```

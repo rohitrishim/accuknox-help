@@ -82,3 +82,25 @@ nav:
       - "Workspace Manager":
           - "What is Workspace Manager": "getting-started/workspace-manager.md"
           - "What is Channel Integration": "getting-started/channel-integration.md"
+
+
+  - "Accuknox deployment [on-premise]":
+    - "Pre-Requisites":
+      - "Istio": 
+          - "What is Istio?": "accuknox-onprem/istio.md"
+          - "How to deploy istio?": "accuknox-onprem/istio-deploy.md"
+      - "Percona - MySQL":
+          - "What is Percona-MySQL?": "accuknox-onprem/mysql.md"
+          - "How to deploy Percona-MySQL?": "accuknox-onprem/mysql-deploy.md"
+      - "Kafka":
+          - "What is Kafka?": "accuknox-onprem/kafka.md"
+          - "How to deploy Kafka?": "accuknox-onprem/kafka-deploy.md"
+      - "Pinot":
+          - "What is Pinot?": "accuknox-onprem/pinot.md"
+          - "How to deploy Pinot?": "accuknox-onprem/pinot-deploy.md"
+    - "Accuknox core components": 
+        - "how to deploy?": "accuknox-onprem/core-components-deploy.md"
+    - "Accuknox agents":
+        - "how to deploy?": "accuknox-onprem/agents-deploy.md"       
+    - "Accuknox UI":
+        - "UI deployment": "accuknox-onprem/ui-deploy.md"
