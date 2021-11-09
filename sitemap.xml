@@ -276,6 +276,11 @@
          <changefreq>daily</changefreq>
     </url>
     <url>
+         <loc>https://accuknox.com/open-source/open-source-accuknox/</loc>
+         <lastmod>2021-11-09</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
          <loc>https://accuknox.com/open-source/what-is-cilium/</loc>
          <lastmod>2021-11-09</lastmod>
          <changefreq>daily</changefreq>
