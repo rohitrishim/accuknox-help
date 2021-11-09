@@ -1565,10 +1565,12 @@
 </li>
 </ul>
 <h3 id="kubearmor">KubeArmor<a class="headerlink" href="#kubearmor" title="Permanent link">&para;</a></h3>
-<p><a href="https://github.com/kubearmor/kubearmor">KubeArmor</a> is a cloud-native runtime security enforcement system that restricts the behavior (such as process execution, file access, and networking operation) of containers and nodes at the system level. With KubeArmor, a user can:
-* restrict file system access for certain processes
-* restrict what processes can be spawned within the pod
-* restrict the capabilities that can be used by the processes within the pod</p>
+<p><a href="https://github.com/kubearmor/kubearmor">KubeArmor</a> is a cloud-native runtime security enforcement system that restricts the behavior (such as process execution, file access, and networking operation) of containers and nodes at the system level. With KubeArmor, a user can:</p>
+<ul>
+<li>restrict file system access for certain processes</li>
+<li>restrict what processes can be spawned within the pod</li>
+<li>restrict the capabilities that can be used by the processes within the pod</li>
+</ul>
 <p>KubeArmor differs from seccomp based profiles, wherein KubeArmor allows to dynamically set the restrictions on the pod. With seccomp the restrictions must be placed during the pod startup and cannot be changed later. KubeArmor leverages Linux Security Modules (LSMs) to enforce policies at runtime.</p>
 <h3 id="policy_auto_discovery">Policy Auto Discovery<a class="headerlink" href="#policy_auto_discovery" title="Permanent link">&para;</a></h3>
 <p>Accuknox policy enforcement engines based on KubeArmor and Cilium are very flexible and powerful. However, these policy engines must be fed with policies. With 10s or 100s of pods and workloads running in a cluster it is insanely difficult to handcraft such policies. Accuknox policy auto-discovery engine leverages the pod visibility provided by KubeArmor and Cilium to auto-generate network and system policies.</p>
