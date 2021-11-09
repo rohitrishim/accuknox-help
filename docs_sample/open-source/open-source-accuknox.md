@@ -23,3 +23,14 @@ KubeArmor differs from seccomp based profiles, wherein KubeArmor allows to dynam
 Accuknox policy enforcement engines based on KubeArmor and Cilium are very flexible and powerful. However, these policy engines must be fed with policies. With 10s or 100s of pods and workloads running in a cluster it is insanely difficult to handcraft such policies. Accuknox policy auto-discovery engine leverages the pod visibility provided by KubeArmor and Cilium to auto-generate network and system policies.
 
 ![Policy Discovery](../assets/images/policy-discovery.png)
+
+### Policy Templates
+Accuknox provides recommended policies based popular workloads or for the host (based on [MITRE](https://attack.mitre.org/)).
+The [policy-templates open source repo](https://github.com/kubearmor/policy-templates) provides policy templates based on KubeArmor and Cilium policies for:
+
+* known CVEs and attack vectors
+* compliance frameworks (such as PCI-DSS)
+* [MITRE](https://attack.mitre.org/) based host policies
+* [STIG](https://public.cyber.mil/stigs/) based policies for popular workloads
+
+Accuknox intends to garner community contribution towards such policy-templates and open-sourced policy engines certainly helps this cause futher.
