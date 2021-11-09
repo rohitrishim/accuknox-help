@@ -9,7 +9,7 @@ Note: Please use feeder-service namespace , if required.
 
 #### 2. Clone the git repository
 ```sh
-git clone https://github.com/accuknox/Accuknox-Logging/tree/dev
+git clone -b dev https://github.com/accuknox/Accuknox-Logging
 ```
 - Navigate into the directory that holds eck-operator folder.
 
