@@ -13,14 +13,14 @@
         <meta name="author" content="Asif Ali">
       
       
-        <link rel="canonical" href="https://accuknox.com/accuknox-onprem/sw-req-pre-requisites/">
+        <link rel="canonical" href="https://accuknox.com/auto_discovery_of_policies/auto_discovery_of_policies/">
       
       <link rel="icon" href="../../assets/images/favicon.ico">
       <meta name="generator" content="mkdocs-1.2.3, mkdocs-material-7.3.4">
     
     
       
-        <title>Sw req pre requisites - AccuKnox</title>
+        <title>Auto Discovery of Policies - AccuKnox</title>
       
     
     
@@ -74,6 +74,11 @@
     <label class="md-overlay" for="__drawer"></label>
     <div data-md-component="skip">
       
+        
+        <a href="#functionality_overview" class="md-skip">
+          Skip to content
+        </a>
+      
     </div>
     <div data-md-component="announce">
       
@@ -102,7 +107,7 @@
         <div class="md-header__topic" data-md-component="header-topic">
           <span class="md-ellipsis">
             
-              Sw req pre requisites
+              Auto Discovery of Policies
             
           </span>
         </div>
@@ -332,12 +337,14 @@
 
   
   
+    
+  
   
     
-    <li class="md-nav__item md-nav__item--nested">
+    <li class="md-nav__item md-nav__item--active md-nav__item--nested">
       
       
-        <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_3" type="checkbox" id="__nav_3" >
+        <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_3" type="checkbox" id="__nav_3" checked>
       
       
       
@@ -447,11 +454,101 @@
               
   
   
+    
   
-    <li class="md-nav__item">
-      <a href="../../auto_discovery_of_policies/auto_discovery_of_policies/" class="md-nav__link">
+  
+    <li class="md-nav__item md-nav__item--active">
+      
+      <input class="md-nav__toggle md-toggle" data-md-toggle="toc" type="checkbox" id="__toc">
+      
+      
+      
+        <label class="md-nav__link md-nav__link--active" for="__toc">
+          Auto Discovery of Policies
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <a href="./" class="md-nav__link md-nav__link--active">
         Auto Discovery of Policies
       </a>
+      
+        
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#functionality_overview" class="md-nav__link">
+    Functionality Overview
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#policy_discovery_examples" class="md-nav__link">
+    Policy Discovery Examples
+  </a>
+  
+    <nav class="md-nav" aria-label="Policy Discovery Examples">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#the_intersection_of_matched_labels" class="md-nav__link">
+    The intersection of matched labels
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#the_aggregation_of_toports_rules_per_the_same_destination" class="md-nav__link">
+    The aggregation of toPorts rules per the same destination
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#the_trace_of_the_outdated_network_policy" class="md-nav__link">
+    The trace of the outdated network policy
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#auto_discovered_policies_dashboard" class="md-nav__link">
+    Auto Discovered Policies Dashboard
+  </a>
+  
+    <nav class="md-nav" aria-label="Auto Discovered Policies Dashboard">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#apply_auto_discovered_policies" class="md-nav__link">
+    Apply Auto Discovered Policies.
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+      
     </li>
   
 
@@ -497,7 +594,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../support/" class="md-nav__link">
+      <a href="../../accuknox-onprem/support/" class="md-nav__link">
         Support
       </a>
     </li>
@@ -511,7 +608,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../what-is-ak-on-prem/" class="md-nav__link">
+      <a href="../../accuknox-onprem/what-is-ak-on-prem/" class="md-nav__link">
         What is it?
       </a>
     </li>
@@ -551,7 +648,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../ak-architecture-diagram/" class="md-nav__link">
+      <a href="../../accuknox-onprem/ak-architecture-diagram/" class="md-nav__link">
         Diagram
       </a>
     </li>
@@ -565,7 +662,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../ak-architecture-diagram-purpose/" class="md-nav__link">
+      <a href="../../accuknox-onprem/ak-architecture-diagram-purpose/" class="md-nav__link">
         Purpose
       </a>
     </li>
@@ -612,7 +709,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../hw-req-pre-requisites/" class="md-nav__link">
+      <a href="../../accuknox-onprem/hw-req-pre-requisites/" class="md-nav__link">
         Hardware Pre-requisites
       </a>
     </li>
@@ -652,7 +749,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../istio-purpose/" class="md-nav__link">
+      <a href="../../accuknox-onprem/istio-purpose/" class="md-nav__link">
         Purpose
       </a>
     </li>
@@ -666,7 +763,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../istio-install/" class="md-nav__link">
+      <a href="../../accuknox-onprem/istio-install/" class="md-nav__link">
         How to install?
       </a>
     </li>
@@ -680,7 +777,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../istio-verify/" class="md-nav__link">
+      <a href="../../accuknox-onprem/istio-verify/" class="md-nav__link">
         How to verify?
       </a>
     </li>
@@ -727,7 +824,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../mysql-purpose/" class="md-nav__link">
+      <a href="../../accuknox-onprem/mysql-purpose/" class="md-nav__link">
         Purpose
       </a>
     </li>
@@ -741,7 +838,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../mysql-install/" class="md-nav__link">
+      <a href="../../accuknox-onprem/mysql-install/" class="md-nav__link">
         How to install?
       </a>
     </li>
@@ -755,7 +852,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../mysql-verify/" class="md-nav__link">
+      <a href="../../accuknox-onprem/mysql-verify/" class="md-nav__link">
         How to verify?
       </a>
     </li>
@@ -802,7 +899,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../kafka-purpose/" class="md-nav__link">
+      <a href="../../accuknox-onprem/kafka-purpose/" class="md-nav__link">
         Purpose
       </a>
     </li>
@@ -816,7 +913,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../kafka-install/" class="md-nav__link">
+      <a href="../../accuknox-onprem/kafka-install/" class="md-nav__link">
         How to install?
       </a>
     </li>
@@ -830,7 +927,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../kafka-verify/" class="md-nav__link">
+      <a href="../../accuknox-onprem/kafka-verify/" class="md-nav__link">
         How to verify?
       </a>
     </li>
@@ -877,7 +974,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../pinot-purpose/" class="md-nav__link">
+      <a href="../../accuknox-onprem/pinot-purpose/" class="md-nav__link">
         Purpose
       </a>
     </li>
@@ -891,7 +988,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../pinot-install/" class="md-nav__link">
+      <a href="../../accuknox-onprem/pinot-install/" class="md-nav__link">
         How to install?
       </a>
     </li>
@@ -905,7 +1002,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../pinot-verify/" class="md-nav__link">
+      <a href="../../accuknox-onprem/pinot-verify/" class="md-nav__link">
         How to verify?
       </a>
     </li>
@@ -959,7 +1056,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../hw-req-core-components/" class="md-nav__link">
+      <a href="../../accuknox-onprem/hw-req-core-components/" class="md-nav__link">
         Hardware Pre-requisites
       </a>
     </li>
@@ -973,7 +1070,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../core-components-install/" class="md-nav__link">
+      <a href="../../accuknox-onprem/core-components-install/" class="md-nav__link">
         How to install?
       </a>
     </li>
@@ -987,7 +1084,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../core-components-verify/" class="md-nav__link">
+      <a href="../../accuknox-onprem/core-components-verify/" class="md-nav__link">
         How to verify?
       </a>
     </li>
@@ -1034,7 +1131,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../hw-req-agent/" class="md-nav__link">
+      <a href="../../accuknox-onprem/hw-req-agent/" class="md-nav__link">
         Hardware Pre-requisites
       </a>
     </li>
@@ -1048,7 +1145,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../agents-install/" class="md-nav__link">
+      <a href="../../accuknox-onprem/agents-install/" class="md-nav__link">
         How to install?
       </a>
     </li>
@@ -1062,7 +1159,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../agents-verify/" class="md-nav__link">
+      <a href="../../accuknox-onprem/agents-verify/" class="md-nav__link">
         How to verify?
       </a>
     </li>
@@ -1135,7 +1232,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../hw-req-prom-graf/" class="md-nav__link">
+      <a href="../../accuknox-onprem/hw-req-prom-graf/" class="md-nav__link">
         Hardware Pre-requisites
       </a>
     </li>
@@ -1149,7 +1246,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../prom-graf-purpose/" class="md-nav__link">
+      <a href="../../accuknox-onprem/prom-graf-purpose/" class="md-nav__link">
         Purpose
       </a>
     </li>
@@ -1163,7 +1260,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../prom-graf-install/" class="md-nav__link">
+      <a href="../../accuknox-onprem/prom-graf-install/" class="md-nav__link">
         How to install?
       </a>
     </li>
@@ -1177,7 +1274,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../prom-graf-verify/" class="md-nav__link">
+      <a href="../../accuknox-onprem/prom-graf-verify/" class="md-nav__link">
         How to verify?
       </a>
     </li>
@@ -1231,7 +1328,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../hw-req-logging/" class="md-nav__link">
+      <a href="../../accuknox-onprem/hw-req-logging/" class="md-nav__link">
         Hardware Pre-requisites
       </a>
     </li>
@@ -1271,7 +1368,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../eck-purpose/" class="md-nav__link">
+      <a href="../../accuknox-onprem/eck-purpose/" class="md-nav__link">
         Purpose
       </a>
     </li>
@@ -1285,7 +1382,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../eck-install/" class="md-nav__link">
+      <a href="../../accuknox-onprem/eck-install/" class="md-nav__link">
         How to install?
       </a>
     </li>
@@ -1299,7 +1396,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../eck-verify/" class="md-nav__link">
+      <a href="../../accuknox-onprem/eck-verify/" class="md-nav__link">
         How to verify?
       </a>
     </li>
@@ -1346,7 +1443,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../loki-purpose/" class="md-nav__link">
+      <a href="../../accuknox-onprem/loki-purpose/" class="md-nav__link">
         Purpose
       </a>
     </li>
@@ -1360,7 +1457,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../loki-install/" class="md-nav__link">
+      <a href="../../accuknox-onprem/loki-install/" class="md-nav__link">
         How to install?
       </a>
     </li>
@@ -1395,19 +1492,200 @@
               </div>
             
             
+              
+              <div class="md-sidebar md-sidebar--secondary" data-md-component="sidebar" data-md-type="toc" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#functionality_overview" class="md-nav__link">
+    Functionality Overview
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#policy_discovery_examples" class="md-nav__link">
+    Policy Discovery Examples
+  </a>
+  
+    <nav class="md-nav" aria-label="Policy Discovery Examples">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#the_intersection_of_matched_labels" class="md-nav__link">
+    The intersection of matched labels
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#the_aggregation_of_toports_rules_per_the_same_destination" class="md-nav__link">
+    The aggregation of toPorts rules per the same destination
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#the_trace_of_the_outdated_network_policy" class="md-nav__link">
+    The trace of the outdated network policy
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#auto_discovered_policies_dashboard" class="md-nav__link">
+    Auto Discovered Policies Dashboard
+  </a>
+  
+    <nav class="md-nav" aria-label="Auto Discovered Policies Dashboard">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#apply_auto_discovered_policies" class="md-nav__link">
+    Apply Auto Discovered Policies.
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+                  </div>
+                </div>
+              </div>
+            
           
           <div class="md-content" data-md-component="content">
             <article class="md-content__inner md-typeset">
               
                 
-                  <a href="https://github.com/accuknox/accuknox-help/edit/main/docs_sample/accuknox-onprem/sw-req-pre-requisites.md" title="Edit this page" class="md-content__button md-icon">
+                  <a href="https://github.com/accuknox/accuknox-help/edit/main/docs_sample/auto_discovery_of_policies/auto_discovery_of_policies.md" title="Edit this page" class="md-content__button md-icon">
                     <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20.71 7.04c.39-.39.39-1.04 0-1.41l-2.34-2.34c-.37-.39-1.02-.39-1.41 0l-1.84 1.83 3.75 3.75M3 17.25V21h3.75L17.81 9.93l-3.75-3.75L3 17.25z"/></svg>
                   </a>
                 
                 
-                  <h1>Sw req pre requisites</h1>
+                  <h1>Auto Discovery of Policies</h1>
                 
-                
+                <p>Auto Discovery is a policy recommendation system that suggests network and system policies based on the collected network and system logs respectively.</p>
+<p>Auto Discovery is designed for Kubernetes environments; it focuses on pods/services, and its fundamental principle is to produce a minimal network and system policy set covering maximum behavior. To do this, we actively use the label information assigned from the Kubernetes workloads/resources.</p>
+<p>Currently, Auto Discovery can discover (i) egress/ingress network policy for Pod-to- Pod, (External)Service, Entity, CIDR, FQDN, HTTP. And, In the System perspective it can discover (ii) process, file, and network-relevant system policy.</p>
+<h2 id="functionality_overview">Functionality Overview<a class="headerlink" href="#functionality_overview" title="Permanent link">&para;</a></h2>
+<ul>
+<li>
+<p>Produce a minimum network policy set covering maximum network flows</p>
+<ul>
+<li>When discovering the network policies, if we generate the policies applied to a single pod statically, there would be lots of network policies. In contrast, Auto Discovery produces the minimum network policy set that can cover the maximum network flows so that we can manage the network policies more efficiently and effectively. For example, Auto Discovery collects the label information of the pods, and then computes the intersection of labels, which is the most included in the source (or destination) pods.</li>
+</ul>
+</li>
+<li>
+<p>Identify overlapped network policy</p>
+<ul>
+<li>
+<p>Regarding the external destination, Auto Discovery builds CIDR or FQDN-based policies, and to do this it takes two steps. First, if it comes across the external IP address as the destination, it tries to convert the IP address to the domain name by leveraging the reverse domain services. Next, if it fails to find the domain name, it retrieves the domain name from an internal map that matches the domain name to the IP address collected by DNS query and response packets from the kube-dns traffic. Thus, building FQDN based policies has a higher priority than CIDR policies.</p>
+<p>Inevitably, CIDR policies could be discovered if there is no information on the matched domain names. However, if we build an FQDN policy that overlaps the prior CIDR policy, Auto Discovery can tag and update those policies so that we can maintain the latest network policies.</p>
+</li>
+</ul>
+</li>
+<li>
+<p>Operate in runtime or on the collected network logs in advance</p>
+<ul>
+<li>Generally, Auto Discovery discovers the network policies by extracting the network logs from the database every time intervals. In addition, It can connect to a log monitor directly (e.g., Cilium Hubble), and receive the network log, and then produce the network policies in runtime.</li>
+</ul>
+</li>
+<li>
+<p>Support various network and system policy discovery modes</p>
+<ul>
+<li>Fundamentally, a pod has two types of network policy in Kubernetes; egress and ingress. The egress policy restricts the outbound network flows and the other way, the ingress policy operates against the inbound network flows. In this context, Auto Discovery supports both types of policy discovery modes; egress-centric and ingress-centric. Additionally System-centric also. System Policy can be of process, file, and network types. Thus, users can choose one of them depending on their demand.</li>
+</ul>
+</li>
+</ul>
+<h2 id="policy_discovery_examples">Policy Discovery Examples<a class="headerlink" href="#policy_discovery_examples" title="Permanent link">&para;</a></h2>
+<h3 id="the_intersection_of_matched_labels">The intersection of matched labels<a class="headerlink" href="#the_intersection_of_matched_labels" title="Permanent link">&para;</a></h3>
+<p><img alt="Figure: 1" src="https://github.com/accuknox/accuknox-help/blob/main/docs_sample/images/figure1.png" />
+Let's assume that there are three pods and two connections between them as shown in the above figure. From the network logs from it, the Auto Discovery does not discover the two distinct network policies; [Pod A -&gt; Pod C] and [Pod A -&gt; Pod C].</p>
+<p>Instead, since Pod A and Pod B have the intersection of the labels, which is 'group=alice', the knoxAutoPolicy discovers and generates a network policy that has the selector with matchLabels 'group=alice'. Finally, we can get one network policy that covers two distinct network flows [group=alice -&gt; Pod C].</p>
+<h3 id="the_aggregation_of_toports_rules_per_the_same_destination">The aggregation of toPorts rules per the same destination<a class="headerlink" href="#the_aggregation_of_toports_rules_per_the_same_destination" title="Permanent link">&para;</a></h3>
+<p><img alt="Figure: 2" src="https://github.com/accuknox/accuknox-help/blob/main/docs_sample/images/figure2.png" /></p>
+<p>Similar to the previous case, we can merge the multiple toPorts rules per each same destination. Let's assume that there are the source and destination pods and three different flows as shown in the above figure. In this case, the Auto Discovery does not generate three different network policies per each toPorts rule.</p>
+<p>More efficiently, the Auto Discovery discovers one network policy and has one matchLabel rule and three toPorts rules; port numbers are 443, 8080, and 80. From this merge, it can be enabled to produce a minimum network policy set covering maximum network flows.</p>
+<h3 id="the_trace_of_the_outdated_network_policy">The trace of the outdated network policy<a class="headerlink" href="#the_trace_of_the_outdated_network_policy" title="Permanent link">&para;</a></h3>
+<p><img alt="Figure: 3" src="https://github.com/accuknox/accuknox-help/blob/main/docs_sample/images/figure3.png" /></p>
+<p>Since the Auto Discovery can do the discovery job at the time intervals, there could be some overlapping. For example, as shown in the above figure, let's assume we discovered policy A and B at the time t1 and t2 respectively.</p>
+<p>However, policy B has the same toCIDRs rule as policy A does but a different toPorts rule. In this case, It updates policy B by merging the toPorts rule to the latest one, and then it marks policy A as outdated and puts the relevant latest policy name. Thus, users can retrieve only the latest network policies from the database.</p>
+<h2 id="auto_discovered_policies_dashboard"><strong>Auto Discovered Policies Dashboard</strong><a class="headerlink" href="#auto_discovered_policies_dashboard" title="Permanent link">&para;</a></h2>
+<p><img alt="Figure: 4" src="https://github.com/accuknox/accuknox-help/blob/main/docs_sample/images/figure4.png" /></p>
+<ul>
+<li>
+<p>You can filter Auto Discovered Policies using following filters:</p>
+<ul>
+<li>
+<p>Cluster :- Filter Policies by clusters belonging to your workspace.</p>
+</li>
+<li>
+<p>Namespace: Filter Policies by namespaces belonging to selected clusters</p>
+</li>
+<li>
+<p>Policy-Type: Filter Policies by Policy types. There are 3 Policy types. (i) Network-Ingress (ii) Network-Egress (iii) System Policy</p>
+</li>
+<li>
+<p>Category: Category will give the status of the policies. There are 2 categories.</p>
+<ul>
+<li>
+<p>Used : When the Policy is applied from the Auto Discovered Policy Screen, It will go to All Policy Screen and Category will be changed to <strong>Used</strong>. You can list all used policies with used category.</p>
+</li>
+<li>
+<p>Ignore: You can list all ignored policies using this filter.</p>
+</li>
+</ul>
+<h3 id="apply_auto_discovered_policies"><strong>Apply Auto Discovered Policies.</strong><a class="headerlink" href="#apply_auto_discovered_policies" title="Permanent link">&para;</a></h3>
+</li>
+</ul>
+</li>
+<li>
+<p>Select one or more policies from the list
+    <img alt="Figure: 5" src="https://github.com/accuknox/accuknox-help/blob/main/docs_sample/images/figure5.png" />
+    Note: Default screen will show all un-used policies.</p>
+</li>
+<li>
+<p>Click “<strong>Action</strong>” Button on the top right corner.
+    <img alt="Figure: 6" src="https://github.com/accuknox/accuknox-help/blob/main/docs_sample/images/figure6.png" />
+    There are 3 Actions can be performed. (i) Apply (ii) Ignore (iii) Deselect all</p>
+</li>
+<li>
+<p>Click <strong>Apply</strong>. Then Policy will be applied to the cluster. Applied Policy will go to pending approval.
+    <img alt="Figure: 7" src="https://github.com/accuknox/accuknox-help/blob/main/docs_sample/images/figure7.png" /></p>
+</li>
+<li>
+<p>Go to “Pending Approval” screen and Approve the policy.
+    <img alt="Figure: 8" src="https://github.com/accuknox/accuknox-help/blob/main/docs_sample/images/figure8.png" />
+    Note: You need Administrative permission to approve policies.</p>
+</li>
+<li>
+<p>Approved Policy will go to All Policies Screen.</p>
+</li>
+</ul>
                 
               
               
@@ -1423,6 +1701,41 @@
       
         
 <footer class="md-footer">
+  
+    <nav class="md-footer__inner md-grid" aria-label="Footer">
+      
+        
+        <a href="../../getting-started/channel-integration/" class="md-footer__link md-footer__link--prev" aria-label="Previous: What is Channel Integration" rel="prev">
+          <div class="md-footer__button md-icon">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11h12z"/></svg>
+          </div>
+          <div class="md-footer__title">
+            <div class="md-ellipsis">
+              <span class="md-footer__direction">
+                Previous
+              </span>
+              What is Channel Integration
+            </div>
+          </div>
+        </a>
+      
+      
+        
+        <a href="../../accuknox-onprem/support/" class="md-footer__link md-footer__link--next" aria-label="Next: Support" rel="next">
+          <div class="md-footer__title">
+            <div class="md-ellipsis">
+              <span class="md-footer__direction">
+                Next
+              </span>
+              Support
+            </div>
+          </div>
+          <div class="md-footer__button md-icon">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M4 11v2h12l-5.5 5.5 1.42 1.42L19.84 12l-7.92-7.92L10.5 5.5 16 11H4z"/></svg>
+          </div>
+        </a>
+      
+    </nav>
   
   <div class="md-footer-meta md-typeset">
     <div class="md-footer-meta__inner md-grid">
