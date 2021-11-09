@@ -320,6 +320,13 @@
   
 </li>
         
+          <li class="md-nav__item">
+  <a href="#policy_templates" class="md-nav__link">
+    Policy Templates
+  </a>
+  
+</li>
+        
       </ul>
     </nav>
   
@@ -1524,6 +1531,13 @@
   
 </li>
         
+          <li class="md-nav__item">
+  <a href="#policy_templates" class="md-nav__link">
+    Policy Templates
+  </a>
+  
+</li>
+        
       </ul>
     </nav>
   
@@ -1575,6 +1589,16 @@
 <h3 id="policy_auto_discovery">Policy Auto Discovery<a class="headerlink" href="#policy_auto_discovery" title="Permanent link">&para;</a></h3>
 <p>Accuknox policy enforcement engines based on KubeArmor and Cilium are very flexible and powerful. However, these policy engines must be fed with policies. With 10s or 100s of pods and workloads running in a cluster it is insanely difficult to handcraft such policies. Accuknox policy auto-discovery engine leverages the pod visibility provided by KubeArmor and Cilium to auto-generate network and system policies.</p>
 <p><img alt="Policy Discovery" src="../../assets/images/policy-discovery.png" /></p>
+<h3 id="policy_templates">Policy Templates<a class="headerlink" href="#policy_templates" title="Permanent link">&para;</a></h3>
+<p>Accuknox provides recommended policies based popular workloads or for the host (based on <a href="https://attack.mitre.org/">MITRE</a>).
+The <a href="https://github.com/kubearmor/policy-templates">policy-templates open source repo</a> provides policy templates based on KubeArmor and Cilium policies for:</p>
+<ul>
+<li>known CVEs and attack vectors</li>
+<li>compliance frameworks (such as PCI-DSS)</li>
+<li><a href="https://attack.mitre.org/">MITRE</a> based host policies</li>
+<li><a href="https://public.cyber.mil/stigs/">STIG</a> based policies for popular workloads</li>
+</ul>
+<p>Accuknox intends to garner community contribution towards such policy-templates and open-sourced policy engines certainly helps this cause futher.</p>
                 
               
               
