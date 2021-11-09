@@ -67,7 +67,7 @@ extra:
 # Page tree
 nav:
   - "Home": "index.md"
-# - "Getting started": 
+# - "Getting started":
 #     - "What is Accuknox": "getting-started/what-is-accuknox.md"
 
   - "Getting Started with Open Source Components":
@@ -87,7 +87,7 @@ nav:
 
   - "Accuknox deployment [on-premise]":
     - "Pre-Requisites":
-      - "Istio": 
+      - "Istio":
           - "What is Istio?": "accuknox-onprem/istio.md"
           - "How to deploy istio?": "accuknox-onprem/istio-deploy.md"
       - "Percona - MySQL":
@@ -99,9 +99,17 @@ nav:
       - "Pinot":
           - "What is Pinot?": "accuknox-onprem/pinot.md"
           - "How to deploy Pinot?": "accuknox-onprem/pinot-deploy.md"
-    - "Accuknox core components": 
+      - "Temporal":
+          - "What is Pinot?": "accuknox-onprem/temporal.md"
+          - "How to deploy Pinot?": "accuknox-onprem/temporal-deploy.md"
+      - "Elastic":
+            - "What is Pinot?": "accuknox-onprem/elastic.md"
+            - "How to deploy Pinot?": "accuknox-onprem/elastic-deploy.md"
+      - "FAQ":
+            - "FAQ?": "accuknox-onprem/FAQ.md"
+    - "Accuknox core components":
         - "how to deploy?": "accuknox-onprem/core-components-deploy.md"
     - "Accuknox agents":
-        - "how to deploy?": "accuknox-onprem/agents-deploy.md"       
+        - "how to deploy?": "accuknox-onprem/agents-deploy.md"
     - "Accuknox UI":
         - "UI deployment": "accuknox-onprem/ui-deploy.md"
