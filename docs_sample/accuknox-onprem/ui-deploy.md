@@ -1,9 +1,9 @@
 ## Add accuknox repository to install UI on VM
 
 ```sh
-helm repo add accuknox-ui  https://accuknox-user:5U:u8~wu-b@agents.accuknox.com/repository/accuknox-ui
+helm repo add accuknox-onprem-ui  https:/USERNAME:PASSWORD@agents.accuknox.com/repository/accuknox-ui
 helm repo update
-helm search repo accuknox-ui
+helm search repo accuknox-onprem-ui
 helm pull accuknox-ui/ui-build --untar
 ```
 
