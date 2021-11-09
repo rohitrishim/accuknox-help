@@ -20,7 +20,7 @@ Find the helm binary in the unpacked directory, and move it to its desired desti
 #### Add accuknox repository to install Agents helm package:
 
 ```sh
-helm repo add accuknox-onprem-agents https://USERNAME:PASSWORD@agents.accuknox.com/repository/accuknox-agents
+helm repo add accuknox-onprem-agents https://USERNAME:PASSWORD@agents.accuknox.com/repository/accuknox-onprem-agents
 helm repo update
 helm search repo accuknox-onprem-agents
 ```
