@@ -1531,7 +1531,7 @@
 <p><b>For more reference:</b> <a href="https://helm.sh/docs/intro/install/">Click here..</a></p>
 <hr />
 <p>Add accuknox repository to install Pinot helm package</p>
-<div class="codehilite"><pre><span></span><code>helm repo add accuknox-onprem-prerequisites https://USERNAME:PASSWORD@agents.accuknox.com/repository/accuknox-prerequisites
+<div class="codehilite"><pre><span></span><code>helm repo add accuknox-onprem-prerequisites https://USERNAME:PASSWORD@agents.accuknox.com/repository/accuknox-onprem-prerequisites
 helm repo update
 helm search repo accuknox-onprem-prerequisites
 helm pull accuknox-onprem-prerequisites/pinot --untar
@@ -1541,7 +1541,7 @@ helm pull accuknox-onprem-prerequisites/pinot --untar
 kubectl config set-context –current --namespace<span class="o">=</span>accuknox-dev-pinot
 </code></pre></div>
 
-<div class="codehilite"><pre><span></span><code>helm install accuknox-dev-pinot accuknox-pinot-dev/
+<div class="codehilite"><pre><span></span><code>helm install accuknox-dev-pinot pinot
 kubectl get all
 </code></pre></div>
                 

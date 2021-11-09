@@ -1546,24 +1546,14 @@ Nodeselector:
 <p><b>Note:</b> Helm automated tests are performed for Linux AMD64 only during CircleCi builds and releases. Testing of other OSes are the responsibility of the community requesting Helm for the OS in question.</p>
 <p><b>For more reference:</b> <a href="https://helm.sh/docs/intro/install/">Click here..</a></p>
 <hr />
-<p>Add accuknox repository to install  Loki helm package:</p>
-<div class="codehilite"><pre><span></span><code>helm repo add accuknox-monitoring https://USERNAME:PASSWORD@agents.accuknox.com/repository/accuknox-monitoring
-helm repo update
-helm search repo accuknox-monitoring 
-helm pull accuknox-monitoring/loki-stack/loki-stack  --untar
-kubectl create namespace accuknox-loki-logging
-kubectl config set-context --current --namespace<span class="o">=</span>accuknox-loki-logging 
-helm install loki loki-stack/
-</code></pre></div>
-
 <p>Add accuknox repository to install Prometheus &amp; Grafana helm package:</p>
-<div class="codehilite"><pre><span></span><code>helm repo add accuknox-onprem-monitoring https://USERNAME:PASSWORD@agents.accuknox.com/repository/accuknox-monitoring
+<div class="codehilite"><pre><span></span><code>helm repo add accuknox-onprem-monitoring https://USERNAME:PASSWORD@agents.accuknox.com/repository/accuknox-onprem-monitoring
 helm repo update
-helm search repo accuknox-onprem-monitoring 
-helm pull accuknox-onprem-monitoring/kube-prometheus-stack  --untar
+helm search repo accuknox-onprem-monitoring  
+helm pull accuknox-onprem-monitoring/grafana-prometheus-stack --untar
 kubectl create namespace accuknox-monitoring 
 kubectl config set-context --current --namespace<span class="o">=</span>accuknox-monitoring 
-helm install prometheusmetrics kube-prometheus-stack 
+helm install prometheusmetrics grafana-prometheus-stack
 </code></pre></div>
 
 <p>Check the Pods deployment:</p>

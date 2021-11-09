@@ -1509,11 +1509,11 @@
 <p><b>For more reference:</b> <a href="https://helm.sh/docs/intro/install/">Click here..</a></p>
 <hr />
 <p>Add accuknox repository to install  Loki helm package:</p>
-<div class="codehilite"><pre><span></span><code>helm repo add accuknox-onprem-monitoring https://USERNAME:PASSWORD@agents.accuknox.com/repository/accuknox-monitoring
+<div class="codehilite"><pre><span></span><code>helm repo add accuknox-onprem-logging https://USERNAME:PASSWORD@agents.accuknox.com/repository/accuknox-onprem-logging 
 helm repo update
-helm search repo accuknox-onprem-monitoring 
-helm pull accuknox-onprem-monitoring/loki-stack/loki-stack  --untar
-kubectl create namespace accuknox-loki-logging
+helm search repo accuknox-onprem-logging
+helm pull accuknox-onprem-logging/loki-stack  --untar 
+kubectl create namespace accuknox-loki-logging 
 kubectl config set-context --current --namespace<span class="o">=</span>accuknox-loki-logging 
 helm install loki loki-stack/
 </code></pre></div>
