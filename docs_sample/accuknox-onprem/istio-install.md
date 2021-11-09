@@ -34,10 +34,10 @@ kubectl get pods -n istio-system
 Along with creating a service mesh, Istio allows you to manage gateways, which are Envoy  proxies running at the edge of the mesh, providing fine-grained control over traffic entering and  leaving the mesh. 
 ## Add accuknox repositories to install istio helm package:
 ```sh
-helm repo add accuknox-prerequisites https://accuknox-user:5U:u8~wu-b@agents.accuknox.com/repository/accuknox-prerequisites
+helm repo add accuknox-onprem-prerequisites https://USERNAME:PASSWORD@agents.accuknox.com/repository/accuknox-onprem-prerequisites
 helm repo update
-helm search repo accuknox-prerequisites
-helm pull accuknox-prerequisites/istio-gateway-charts --untar
+helm search repo accuknox-onprem-prerequisites
+helm pull accuknox-onprem-prerequisites/istio-gateway-charts --untar
 ```
 Move to directory  
 ```sh 

@@ -33,13 +33,12 @@ Add accuknox repository to install  Mysql Percona helm package:
 helm repo add accuknox-onprem-prerequisites https://USERNAME:PASSWORD@agents.accuknox.com/repository/accuknox-onprem-prerequisites
 helm repo update
 helm search repo accuknox-onprem-prerequisites
-helm pull accuknox-prerequisites/mysql --untar
+helm pull accuknox-onprem-prerequisites/mysql-chart --untar
 ```
 ```sh
-cd mysql-percona-chart
 kubectl create namespace accuknox-dev-mysql
 kubectl config set-context $(kubectl config current-context) --namespace=accuknox-dev-mysql 
-cd accuknox-dev-mysql 
+cd mysql-chart 
 kubectl apply -f bundle.yaml
 kubectl apply -f cr.yaml
 kubectl apply -f secrets.yaml 
