@@ -16,12 +16,47 @@
          <changefreq>daily</changefreq>
     </url>
     <url>
-         <loc>https://accuknox.com/accuknox-onprem/agents-deploy/</loc>
+         <loc>https://accuknox.com/accuknox-onprem/agents-install/</loc>
          <lastmod>2021-11-09</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
-         <loc>https://accuknox.com/accuknox-onprem/core-components-deploy/</loc>
+         <loc>https://accuknox.com/accuknox-onprem/agents-verify/</loc>
+         <lastmod>2021-11-09</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
+         <loc>https://accuknox.com/accuknox-onprem/ak-architecture-diagram-purpose/</loc>
+         <lastmod>2021-11-09</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
+         <loc>https://accuknox.com/accuknox-onprem/ak-architecture-diagram/</loc>
+         <lastmod>2021-11-09</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
+         <loc>https://accuknox.com/accuknox-onprem/core-components-install/</loc>
+         <lastmod>2021-11-09</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
+         <loc>https://accuknox.com/accuknox-onprem/core-components-verify/</loc>
+         <lastmod>2021-11-09</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
+         <loc>https://accuknox.com/accuknox-onprem/eck-install/</loc>
+         <lastmod>2021-11-09</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
+         <loc>https://accuknox.com/accuknox-onprem/eck-purpose/</loc>
+         <lastmod>2021-11-09</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
+         <loc>https://accuknox.com/accuknox-onprem/eck-verify/</loc>
          <lastmod>2021-11-09</lastmod>
          <changefreq>daily</changefreq>
     </url>
@@ -36,42 +71,127 @@
          <changefreq>daily</changefreq>
     </url>
     <url>
-         <loc>https://accuknox.com/accuknox-onprem/istio-deploy/</loc>
+         <loc>https://accuknox.com/accuknox-onprem/hw-req-agent/</loc>
          <lastmod>2021-11-09</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
-         <loc>https://accuknox.com/accuknox-onprem/istio/</loc>
+         <loc>https://accuknox.com/accuknox-onprem/hw-req-core-components/</loc>
          <lastmod>2021-11-09</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
-         <loc>https://accuknox.com/accuknox-onprem/kafka-deploy/</loc>
+         <loc>https://accuknox.com/accuknox-onprem/hw-req-logging/</loc>
          <lastmod>2021-11-09</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
-         <loc>https://accuknox.com/accuknox-onprem/kafka/</loc>
+         <loc>https://accuknox.com/accuknox-onprem/hw-req-pre-requisites/</loc>
          <lastmod>2021-11-09</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
-         <loc>https://accuknox.com/accuknox-onprem/mysql-deploy/</loc>
+         <loc>https://accuknox.com/accuknox-onprem/hw-req-prom-graf/</loc>
          <lastmod>2021-11-09</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
-         <loc>https://accuknox.com/accuknox-onprem/mysql/</loc>
+         <loc>https://accuknox.com/accuknox-onprem/istio-install/</loc>
          <lastmod>2021-11-09</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
-         <loc>https://accuknox.com/accuknox-onprem/pinot-deploy/</loc>
+         <loc>https://accuknox.com/accuknox-onprem/istio-purpose/</loc>
          <lastmod>2021-11-09</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
-         <loc>https://accuknox.com/accuknox-onprem/pinot/</loc>
+         <loc>https://accuknox.com/accuknox-onprem/istio-verify/</loc>
+         <lastmod>2021-11-09</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
+         <loc>https://accuknox.com/accuknox-onprem/kafka-install/</loc>
+         <lastmod>2021-11-09</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
+         <loc>https://accuknox.com/accuknox-onprem/kafka-purpose/</loc>
+         <lastmod>2021-11-09</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
+         <loc>https://accuknox.com/accuknox-onprem/kafka-verify/</loc>
+         <lastmod>2021-11-09</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
+         <loc>https://accuknox.com/accuknox-onprem/loki-install/</loc>
+         <lastmod>2021-11-09</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
+         <loc>https://accuknox.com/accuknox-onprem/loki-purpose/</loc>
+         <lastmod>2021-11-09</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
+         <loc>https://accuknox.com/accuknox-onprem/loki-verify/</loc>
+         <lastmod>2021-11-09</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
+         <loc>https://accuknox.com/accuknox-onprem/mysql-install/</loc>
+         <lastmod>2021-11-09</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
+         <loc>https://accuknox.com/accuknox-onprem/mysql-purpose/</loc>
+         <lastmod>2021-11-09</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
+         <loc>https://accuknox.com/accuknox-onprem/mysql-verify/</loc>
+         <lastmod>2021-11-09</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
+         <loc>https://accuknox.com/accuknox-onprem/pinot-install/</loc>
+         <lastmod>2021-11-09</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
+         <loc>https://accuknox.com/accuknox-onprem/pinot-purpose/</loc>
+         <lastmod>2021-11-09</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
+         <loc>https://accuknox.com/accuknox-onprem/pinot-verify/</loc>
+         <lastmod>2021-11-09</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
+         <loc>https://accuknox.com/accuknox-onprem/prom-graf-install/</loc>
+         <lastmod>2021-11-09</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
+         <loc>https://accuknox.com/accuknox-onprem/prom-graf-purpose/</loc>
+         <lastmod>2021-11-09</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
+         <loc>https://accuknox.com/accuknox-onprem/prom-graf-verify/</loc>
+         <lastmod>2021-11-09</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
+         <loc>https://accuknox.com/accuknox-onprem/support/</loc>
+         <lastmod>2021-11-09</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
+         <loc>https://accuknox.com/accuknox-onprem/sw-req-pre-requisites/</loc>
          <lastmod>2021-11-09</lastmod>
          <changefreq>daily</changefreq>
     </url>
@@ -87,6 +207,11 @@
     </url>
     <url>
          <loc>https://accuknox.com/accuknox-onprem/ui-deploy/</loc>
+         <lastmod>2021-11-09</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
+         <loc>https://accuknox.com/accuknox-onprem/what-is-ak-on-prem/</loc>
          <lastmod>2021-11-09</lastmod>
          <changefreq>daily</changefreq>
     </url>
