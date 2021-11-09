@@ -32,31 +32,16 @@ Find the helm binary in the unpacked directory, and move it to its desired desti
 
 ---
 
-Add accuknox repository to install  Loki helm package:
-
-```sh
-helm repo add accuknox-monitoring https://USERNAME:PASSWORD@agents.accuknox.com/repository/accuknox-monitoring
-helm repo update
-helm search repo accuknox-monitoring 
-helm pull accuknox-monitoring/loki-stack/loki-stack  --untar
-kubectl create namespace accuknox-loki-logging
-kubectl config set-context --current --namespace=accuknox-loki-logging 
-helm install loki loki-stack/
-```
-
-
-
-
 Add accuknox repository to install Prometheus & Grafana helm package:
 
 ```sh
-helm repo add accuknox-onprem-monitoring https://USERNAME:PASSWORD@agents.accuknox.com/repository/accuknox-monitoring
+helm repo add accuknox-onprem-monitoring https://USERNAME:PASSWORD@agents.accuknox.com/repository/accuknox-onprem-monitoring
 helm repo update
-helm search repo accuknox-onprem-monitoring 
-helm pull accuknox-onprem-monitoring/kube-prometheus-stack  --untar
+helm search repo accuknox-onprem-monitoring  
+helm pull accuknox-onprem-monitoring/grafana-prometheus-stack --untar
 kubectl create namespace accuknox-monitoring 
 kubectl config set-context --current --namespace=accuknox-monitoring 
-helm install prometheusmetrics kube-prometheus-stack 
+helm install prometheusmetrics grafana-prometheus-stack
 ```
 
 Check the Pods deployment:
