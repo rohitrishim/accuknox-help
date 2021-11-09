@@ -100,11 +100,11 @@ nav:
           - "What is Pinot?": "accuknox-onprem/pinot.md"
           - "How to deploy Pinot?": "accuknox-onprem/pinot-deploy.md"
       - "Temporal":
-          - "What is Pinot?": "accuknox-onprem/temporal.md"
-          - "How to deploy Pinot?": "accuknox-onprem/temporal-deploy.md"
+          - "What is Temporal?": "accuknox-onprem/temporal.md"
+          - "How to deploy Temporal?": "accuknox-onprem/temporal-deploy.md"
       - "Elastic":
-            - "What is Pinot?": "accuknox-onprem/elastic.md"
-            - "How to deploy Pinot?": "accuknox-onprem/elastic-deploy.md"
+            - "What is Elastic?": "accuknox-onprem/elastic.md"
+            - "How to deploy Elastic?": "accuknox-onprem/elastic-deploy.md"
       - "FAQ":
             - "FAQ?": "accuknox-onprem/FAQ.md"
     - "Accuknox core components":
