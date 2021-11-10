@@ -13,6 +13,7 @@
     3. https://docs.npmjs.com/cli/v7/commands/npm-install
 
 
+## Git Clone the Onprem UI
 ```sh
 git clone https://USERNAME:PASSWORD@github.com/accuknox/accuknox-onprem.git
 git checkout accuknox-onprem-ui
