@@ -7,10 +7,10 @@
     3. Yarn version 1.17+
 
 <b>For your reference:</b>
- 
-     [https://nodejs.org/en/](https://nodejs.org/en/)
-     [https://yarnpkg.com/getting-started/install](https://yarnpkg.com/getting-started/install)
-     [https://docs.npmjs.com/cli/v7/commands/npm-install](https://docs.npmjs.com/cli/v7/commands/npm-install)
+     
+[https://nodejs.org/en/](https://nodejs.org/en/)
+[https://yarnpkg.com/getting-started/install](https://yarnpkg.com/getting-started/install)
+[https://docs.npmjs.com/cli/v7/commands/npm-install](https://docs.npmjs.com/cli/v7/commands/npm-install)
 
 
 ## Git Clone the Onprem UI
@@ -35,23 +35,23 @@ Step 2 : Need to add the new API- base URL path (path to gateway) in two places 
 
 Step 3 : $npm run build
 
-     3.1 :  <b> optional (Command to remove existing code) </b>
+     3.1 :  optional (Command to remove existing code) 
 
             Eg: $gsutil -m rm -r gs://accuknox-ui/build/*
 
-Step 4: <b> Pushing build files from apps/build to GCP bucket(aws or azure bucket)  </b>
+Step 4: Pushing build files from apps/build to <b>GCP bucket(aws or azure bucket)</b> 
 
             Eg: $gsutil -m cp -r app/build/* gs://accuknox-ui/build/
 
 
-<b> Note: Step 4 will vary for different cloud providers </b> 
+<b> Note : Step 4 will vary for different cloud providers </b> 
 
 
 Step 5 : Install nginx application on VM
 
 Step 6 : Configure the certmanager(https) 
         
-            Eg: letsencrypt Tool
+           Eg: letsencrypt Tool
 
 Step 7 : tar -xvf build.tar.gz
 
