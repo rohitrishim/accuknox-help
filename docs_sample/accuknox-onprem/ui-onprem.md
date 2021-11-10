@@ -2,6 +2,7 @@
 
 ```sh
 git clone https://USERNAME:PASSWORD@github.com/accuknox/accuknox-onprem.git
+git checkout accuknox-onprem-ui
 cd build
 ```
 
