@@ -29,14 +29,14 @@ Currently, Auto Discovery can discover (i) egress/ingress network policy for Pod
 
 ### The intersection of matched labels
 
-![Figure: 1](https://github.com/accuknox/accuknox-help/blob/main/docs_sample/images/figure1.png)
+![Figure: 1](../images/figure1.png)
 Let's assume that there are three pods and two connections between them as shown in the above figure. From the network logs from it, the Auto Discovery does not discover the two distinct network policies; [Pod A -> Pod C] and [Pod A -> Pod C].
 
 Instead, since Pod A and Pod B have the intersection of the labels, which is 'group=alice', the knoxAutoPolicy discovers and generates a network policy that has the selector with matchLabels 'group=alice'. Finally, we can get one network policy that covers two distinct network flows [group=alice -> Pod C].
 
 ### The aggregation of toPorts rules per the same destination
 
-![Figure: 2](https://github.com/accuknox/accuknox-help/blob/main/docs_sample/images/figure2.png)
+![Figure: 2](../images/figure2.png)
 
 Similar to the previous case, we can merge the multiple toPorts rules per each same destination. Let's assume that there are the source and destination pods and three different flows as shown in the above figure. In this case, the Auto Discovery does not generate three different network policies per each toPorts rule.
 
@@ -44,14 +44,14 @@ More efficiently, the Auto Discovery discovers one network policy and has one ma
 
 ### The trace of the outdated network policy
 
-![Figure: 3](https://github.com/accuknox/accuknox-help/blob/main/docs_sample/images/figure3.png)
+![Figure: 3](../images/figure3.png)
 
 Since the Auto Discovery can do the discovery job at the time intervals, there could be some overlapping. For example, as shown in the above figure, let's assume we discovered policy A and B at the time t1 and t2 respectively.
 
 However, policy B has the same toCIDRs rule as policy A does but a different toPorts rule. In this case, It updates policy B by merging the toPorts rule to the latest one, and then it marks policy A as outdated and puts the relevant latest policy name. Thus, users can retrieve only the latest network policies from the database.
 
 ## **Auto Discovered Policies Dashboard**
-![Figure: 4](https://github.com/accuknox/accuknox-help/blob/main/docs_sample/images/figure4.png)
+![Figure: 4](../images/figure4.png)
 
 -   You can filter Auto Discovered Policies using following filters:
 
@@ -69,18 +69,18 @@ However, policy B has the same toCIDRs rule as policy A does but a different toP
 ### **Apply Auto Discovered Policies.**
 
 1.  Select one or more policies from the list
-    ![Figure: 5](https://github.com/accuknox/accuknox-help/blob/main/docs_sample/images/figure5.png)
+    ![Figure: 5](../images/figure5.png)
     Note: Default screen will show all un-used policies.
 
 
 2. Click “**Action**” Button on the top right corner.
-    ![Figure: 6](https://github.com/accuknox/accuknox-help/blob/main/docs_sample/images/figure6.png)
+    ![Figure: 6](../images/figure6.png)
     There are 3 Actions can be performed. (i) Apply (ii) Ignore (iii) Deselect all
 
 3. Click **Apply**. Then Policy will be applied to the cluster. Applied Policy will go to pending approval.
-    ![Figure: 7](https://github.com/accuknox/accuknox-help/blob/main/docs_sample/images/figure7.png)
+    ![Figure: 7](../images/figure7.png)
 4. Go to “Pending Approval” screen and Approve the policy.
-    ![Figure: 8](https://github.com/accuknox/accuknox-help/blob/main/docs_sample/images/figure8.png)
+    ![Figure: 8](../images/figure8.png)
     Note: You need Administrative permission to approve policies.
 
 5. Approved Policy will go to All Policies Screen.
