@@ -8,9 +8,9 @@
 
 <b>For your reference:</b>
  
-    1. [https://nodejs.org/en/](https://nodejs.org/en/)
-    2. [https://yarnpkg.com/getting-started/install](https://yarnpkg.com/getting-started/install)
-    3. [https://docs.npmjs.com/cli/v7/commands/npm-install](https://docs.npmjs.com/cli/v7/commands/npm-install)
+     [https://nodejs.org/en/](https://nodejs.org/en/)
+     [https://yarnpkg.com/getting-started/install](https://yarnpkg.com/getting-started/install)
+     [https://docs.npmjs.com/cli/v7/commands/npm-install](https://docs.npmjs.com/cli/v7/commands/npm-install)
 
 
 ## Git Clone the Onprem UI
@@ -47,23 +47,14 @@ Step 4: <b> Pushing build files from apps/build to GCP bucket(aws or azure bucke
 <b> Note: Step 4 will vary for different cloud providers </b> 
 
 
+Step 5 : Install nginx application on VM
 
-
-
-```sh
-git clone https://USERNAME:PASSWORD@github.com/accuknox/accuknox-onprem.git
-git checkout accuknox-onprem-ui
-cd build
-```
-
-Step 1 : Install nginx application on VM
-
-Step 2: Configure the certmanager(https) 
+Step 6 : Configure the certmanager(https) 
         
             Eg: letsencrypt Tool
 
-Step 3: tar -xvf build.tar.gz
+Step 7 : tar -xvf build.tar.gz
 
-Step 4: sudo cp -rvf build/* /usr/share/nginx/html/
+Step 8 : sudo cp -rvf build/* /usr/share/nginx/html/
 
-Step 5: Start the service
+Step 9 : Start the service
