@@ -1593,11 +1593,9 @@
 </code></pre></div>
 
 <p><b>For your reference:</b></p>
-<div class="codehilite"><pre><span></span><code> [https://nodejs.org/en/](https://nodejs.org/en/)
- [https://yarnpkg.com/getting-started/install](https://yarnpkg.com/getting-started/install)
- [https://docs.npmjs.com/cli/v7/commands/npm-install](https://docs.npmjs.com/cli/v7/commands/npm-install)
-</code></pre></div>
-
+<p><a href="https://nodejs.org/en/">https://nodejs.org/en/</a>
+<a href="https://yarnpkg.com/getting-started/install">https://yarnpkg.com/getting-started/install</a>
+<a href="https://docs.npmjs.com/cli/v7/commands/npm-install">https://docs.npmjs.com/cli/v7/commands/npm-install</a></p>
 <h2 id="git_clone_the_onprem_ui">Git Clone the Onprem UI<a class="headerlink" href="#git_clone_the_onprem_ui" title="Permanent link">&para;</a></h2>
 <div class="codehilite"><pre><span></span><code>git clone https://USERNAME:PASSWORD@github.com/accuknox/accuknox-onprem.git
 git checkout accuknox-onprem-ui
@@ -1615,19 +1613,19 @@ git checkout accuknox-onprem-ui
 </code></pre></div>
 
 <p>Step 3 : $npm run build</p>
-<div class="codehilite"><pre><span></span><code> 3.1 :  <span class="nt">&lt;b&gt;</span> optional (Command to remove existing code) <span class="nt">&lt;/b&gt;</span>
+<div class="codehilite"><pre><span></span><code> 3.1 :  optional (Command to remove existing code)
 
         Eg: $gsutil -m rm -r gs://accuknox-ui/build/*
 </code></pre></div>
 
-<p>Step 4: <b> Pushing build files from apps/build to GCP bucket(aws or azure bucket)  </b></p>
+<p>Step 4: Pushing build files from apps/build to <b>GCP bucket(aws or azure bucket)</b> </p>
 <div class="codehilite"><pre><span></span><code>        Eg: $gsutil -m cp -r app/build/* gs://accuknox-ui/build/
 </code></pre></div>
 
-<p><b> Note: Step 4 will vary for different cloud providers </b> </p>
+<p><b> Note : Step 4 will vary for different cloud providers </b> </p>
 <p>Step 5 : Install nginx application on VM</p>
 <p>Step 6 : Configure the certmanager(https) </p>
-<div class="codehilite"><pre><span></span><code>        Eg: letsencrypt Tool
+<div class="codehilite"><pre><span></span><code>       Eg: letsencrypt Tool
 </code></pre></div>
 
 <p>Step 7 : tar -xvf build.tar.gz</p>
