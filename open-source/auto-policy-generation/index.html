@@ -13,14 +13,14 @@
         <meta name="author" content="Asif Ali">
       
       
-        <link rel="canonical" href="https://accuknox.com/accuknox-onprem/temporal/">
+        <link rel="canonical" href="https://accuknox.com/open-source/auto-policy-generation/">
       
       <link rel="icon" href="../../assets/images/favicon.ico">
       <meta name="generator" content="mkdocs-1.2.3, mkdocs-material-7.3.4">
     
     
       
-        <title>Temporal - AccuKnox</title>
+        <title>Autogenerating Policies - AccuKnox</title>
       
     
     
@@ -75,7 +75,7 @@
     <div data-md-component="skip">
       
         
-        <a href="#temporal" class="md-skip">
+        <a href="#policy_auto_discovery" class="md-skip">
           Skip to content
         </a>
       
@@ -107,7 +107,7 @@
         <div class="md-header__topic" data-md-component="header-topic">
           <span class="md-ellipsis">
             
-              Temporal
+              Autogenerating Policies
             
           </span>
         </div>
@@ -233,12 +233,14 @@
 
   
   
+    
+  
   
     
-    <li class="md-nav__item md-nav__item--nested">
+    <li class="md-nav__item md-nav__item--active md-nav__item--nested">
       
       
-        <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_2" type="checkbox" id="__nav_2" >
+        <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_2" type="checkbox" id="__nav_2" checked>
       
       
       
@@ -261,7 +263,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../open-source/open-source-accuknox/" class="md-nav__link">
+      <a href="../open-source-accuknox/" class="md-nav__link">
         AccuKnox Open Source
       </a>
     </li>
@@ -275,7 +277,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../open-source/what-is-cilium/" class="md-nav__link">
+      <a href="../what-is-cilium/" class="md-nav__link">
         What is Cilium
       </a>
     </li>
@@ -289,7 +291,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../open-source/cilium-install/" class="md-nav__link">
+      <a href="../cilium-install/" class="md-nav__link">
         Installing Cilium
       </a>
     </li>
@@ -303,7 +305,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../open-source/what-is-kubearmor/" class="md-nav__link">
+      <a href="../what-is-kubearmor/" class="md-nav__link">
         What is KubeArmor
       </a>
     </li>
@@ -317,7 +319,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../open-source/kubearmor-install/" class="md-nav__link">
+      <a href="../kubearmor-install/" class="md-nav__link">
         Installing KubeArmor
       </a>
     </li>
@@ -329,11 +331,67 @@
               
   
   
+    
   
-    <li class="md-nav__item">
-      <a href="../../open-source/auto-policy-generation/" class="md-nav__link">
+  
+    <li class="md-nav__item md-nav__item--active">
+      
+      <input class="md-nav__toggle md-toggle" data-md-toggle="toc" type="checkbox" id="__toc">
+      
+      
+      
+        <label class="md-nav__link md-nav__link--active" for="__toc">
+          Autogenerating Policies
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <a href="./" class="md-nav__link md-nav__link--active">
         Autogenerating Policies
       </a>
+      
+        
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#policy_auto_discovery" class="md-nav__link">
+    Policy Auto Discovery
+  </a>
+  
+    <nav class="md-nav" aria-label="Policy Auto Discovery">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#using_policy_discovery" class="md-nav__link">
+    Using Policy Discovery
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#fetch_auto_discovered_policies" class="md-nav__link">
+    Fetch Auto Discovered Policies
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+      
     </li>
   
 
@@ -516,7 +574,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../support/" class="md-nav__link">
+      <a href="../../accuknox-onprem/support/" class="md-nav__link">
         Support
       </a>
     </li>
@@ -530,7 +588,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../what-is-ak-on-prem/" class="md-nav__link">
+      <a href="../../accuknox-onprem/what-is-ak-on-prem/" class="md-nav__link">
         What is it?
       </a>
     </li>
@@ -570,7 +628,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../ak-architecture-diagram/" class="md-nav__link">
+      <a href="../../accuknox-onprem/ak-architecture-diagram/" class="md-nav__link">
         Diagram
       </a>
     </li>
@@ -584,7 +642,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../ak-architecture-diagram-purpose/" class="md-nav__link">
+      <a href="../../accuknox-onprem/ak-architecture-diagram-purpose/" class="md-nav__link">
         Purpose
       </a>
     </li>
@@ -631,7 +689,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../hw-req-pre-requisites/" class="md-nav__link">
+      <a href="../../accuknox-onprem/hw-req-pre-requisites/" class="md-nav__link">
         Hardware Pre-requisites
       </a>
     </li>
@@ -671,7 +729,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../istio-purpose/" class="md-nav__link">
+      <a href="../../accuknox-onprem/istio-purpose/" class="md-nav__link">
         Purpose
       </a>
     </li>
@@ -685,7 +743,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../istio-install/" class="md-nav__link">
+      <a href="../../accuknox-onprem/istio-install/" class="md-nav__link">
         How to install?
       </a>
     </li>
@@ -699,7 +757,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../istio-verify/" class="md-nav__link">
+      <a href="../../accuknox-onprem/istio-verify/" class="md-nav__link">
         How to verify?
       </a>
     </li>
@@ -746,7 +804,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../mysql-purpose/" class="md-nav__link">
+      <a href="../../accuknox-onprem/mysql-purpose/" class="md-nav__link">
         Purpose
       </a>
     </li>
@@ -760,7 +818,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../mysql-install/" class="md-nav__link">
+      <a href="../../accuknox-onprem/mysql-install/" class="md-nav__link">
         How to install?
       </a>
     </li>
@@ -774,7 +832,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../mysql-verify/" class="md-nav__link">
+      <a href="../../accuknox-onprem/mysql-verify/" class="md-nav__link">
         How to verify?
       </a>
     </li>
@@ -821,7 +879,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../kafka-purpose/" class="md-nav__link">
+      <a href="../../accuknox-onprem/kafka-purpose/" class="md-nav__link">
         Purpose
       </a>
     </li>
@@ -835,7 +893,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../kafka-install/" class="md-nav__link">
+      <a href="../../accuknox-onprem/kafka-install/" class="md-nav__link">
         How to install?
       </a>
     </li>
@@ -849,7 +907,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../kafka-verify/" class="md-nav__link">
+      <a href="../../accuknox-onprem/kafka-verify/" class="md-nav__link">
         How to verify?
       </a>
     </li>
@@ -896,7 +954,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../pinot-purpose/" class="md-nav__link">
+      <a href="../../accuknox-onprem/pinot-purpose/" class="md-nav__link">
         Purpose
       </a>
     </li>
@@ -910,7 +968,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../pinot-install/" class="md-nav__link">
+      <a href="../../accuknox-onprem/pinot-install/" class="md-nav__link">
         How to install?
       </a>
     </li>
@@ -924,7 +982,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../pinot-verify/" class="md-nav__link">
+      <a href="../../accuknox-onprem/pinot-verify/" class="md-nav__link">
         How to verify?
       </a>
     </li>
@@ -978,7 +1036,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../hw-req-core-components/" class="md-nav__link">
+      <a href="../../accuknox-onprem/hw-req-core-components/" class="md-nav__link">
         Hardware Pre-requisites
       </a>
     </li>
@@ -992,7 +1050,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../core-components-install/" class="md-nav__link">
+      <a href="../../accuknox-onprem/core-components-install/" class="md-nav__link">
         How to install?
       </a>
     </li>
@@ -1006,7 +1064,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../core-components-verify/" class="md-nav__link">
+      <a href="../../accuknox-onprem/core-components-verify/" class="md-nav__link">
         How to verify?
       </a>
     </li>
@@ -1053,7 +1111,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../hw-req-agent/" class="md-nav__link">
+      <a href="../../accuknox-onprem/hw-req-agent/" class="md-nav__link">
         Hardware Pre-requisites
       </a>
     </li>
@@ -1067,7 +1125,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../agents-install/" class="md-nav__link">
+      <a href="../../accuknox-onprem/agents-install/" class="md-nav__link">
         How to install?
       </a>
     </li>
@@ -1081,7 +1139,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../agents-verify/" class="md-nav__link">
+      <a href="../../accuknox-onprem/agents-verify/" class="md-nav__link">
         How to verify?
       </a>
     </li>
@@ -1154,7 +1212,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../hw-req-prom-graf/" class="md-nav__link">
+      <a href="../../accuknox-onprem/hw-req-prom-graf/" class="md-nav__link">
         Hardware Pre-requisites
       </a>
     </li>
@@ -1168,7 +1226,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../prom-graf-purpose/" class="md-nav__link">
+      <a href="../../accuknox-onprem/prom-graf-purpose/" class="md-nav__link">
         Purpose
       </a>
     </li>
@@ -1182,7 +1240,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../prom-graf-install/" class="md-nav__link">
+      <a href="../../accuknox-onprem/prom-graf-install/" class="md-nav__link">
         How to install?
       </a>
     </li>
@@ -1196,7 +1254,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../prom-graf-verify/" class="md-nav__link">
+      <a href="../../accuknox-onprem/prom-graf-verify/" class="md-nav__link">
         How to verify?
       </a>
     </li>
@@ -1250,7 +1308,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../hw-req-logging/" class="md-nav__link">
+      <a href="../../accuknox-onprem/hw-req-logging/" class="md-nav__link">
         Hardware Pre-requisites
       </a>
     </li>
@@ -1290,7 +1348,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../eck-purpose/" class="md-nav__link">
+      <a href="../../accuknox-onprem/eck-purpose/" class="md-nav__link">
         Purpose
       </a>
     </li>
@@ -1304,7 +1362,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../eck-install/" class="md-nav__link">
+      <a href="../../accuknox-onprem/eck-install/" class="md-nav__link">
         How to install?
       </a>
     </li>
@@ -1318,7 +1376,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../eck-verify/" class="md-nav__link">
+      <a href="../../accuknox-onprem/eck-verify/" class="md-nav__link">
         How to verify?
       </a>
     </li>
@@ -1365,7 +1423,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../loki-purpose/" class="md-nav__link">
+      <a href="../../accuknox-onprem/loki-purpose/" class="md-nav__link">
         Purpose
       </a>
     </li>
@@ -1379,7 +1437,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../loki-install/" class="md-nav__link">
+      <a href="../../accuknox-onprem/loki-install/" class="md-nav__link">
         How to install?
       </a>
     </li>
@@ -1433,7 +1491,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../ui-onprem-purpose/" class="md-nav__link">
+      <a href="../../accuknox-onprem/ui-onprem-purpose/" class="md-nav__link">
         Purpose
       </a>
     </li>
@@ -1447,7 +1505,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../ui-onprem/" class="md-nav__link">
+      <a href="../../accuknox-onprem/ui-onprem/" class="md-nav__link">
         How to install?
       </a>
     </li>
@@ -1492,30 +1550,23 @@
     <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
       
         <li class="md-nav__item">
-  <a href="#temporal" class="md-nav__link">
-    Temporal
+  <a href="#policy_auto_discovery" class="md-nav__link">
+    Policy Auto Discovery
   </a>
   
-    <nav class="md-nav" aria-label="Temporal">
+    <nav class="md-nav" aria-label="Policy Auto Discovery">
       <ul class="md-nav__list">
         
           <li class="md-nav__item">
-  <a href="#1_what_are_workflows" class="md-nav__link">
-    1. What are workflows ?
+  <a href="#using_policy_discovery" class="md-nav__link">
+    Using Policy Discovery
   </a>
   
 </li>
         
           <li class="md-nav__item">
-  <a href="#2what_are_activities" class="md-nav__link">
-    2.What are activities ?
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#3how_are_temporal_workflows_used_in_accuknox" class="md-nav__link">
-    3.How are temporal workflows used in AccuKnox ?
+  <a href="#fetch_auto_discovered_policies" class="md-nav__link">
+    Fetch Auto Discovered Policies
   </a>
   
 </li>
@@ -1537,40 +1588,38 @@
             <article class="md-content__inner md-typeset">
               
                 
-                  <a href="https://github.com/accuknox/accuknox-help/edit/main/docs_sample/accuknox-onprem/temporal.md" title="Edit this page" class="md-content__button md-icon">
+                  <a href="https://github.com/accuknox/accuknox-help/edit/main/docs_sample/open-source/auto-policy-generation.md" title="Edit this page" class="md-content__button md-icon">
                     <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20.71 7.04c.39-.39.39-1.04 0-1.41l-2.34-2.34c-.37-.39-1.02-.39-1.41 0l-1.84 1.83 3.75 3.75M3 17.25V21h3.75L17.81 9.93l-3.75-3.75L3 17.25z"/></svg>
                   </a>
                 
                 
-                  <h1>Temporal</h1>
+                  <h1>Autogenerating Policies</h1>
                 
-                <h2 id="temporal">Temporal<a class="headerlink" href="#temporal" title="Permanent link">&para;</a></h2>
-<ul>
-<li>Temporal is an orchestration platform for microservices and a workflow engine that runs in a loop until the workflow is complete. The major advantages of temporal include</li>
-<li>Handling intermittent failures</li>
-<li>Re-running the failed operations until success.</li>
-<li>Supporting long running operations.</li>
-<li>
-<p>Running multiple operations parallelly.</p>
-</li>
-<li>
-<p>Temporal are written in two types of special purpose functions:</p>
-</li>
-</ul>
-<h3 id="1_what_are_workflows">1. What are workflows ?<a class="headerlink" href="#1_what_are_workflows" title="Permanent link">&para;</a></h3>
-<ul>
-<li>Workflows can be seen as a set of tasks that has a specific goal to achieve and it will run until the goal is achieved. Workflow has various timeout options in order to stop the workflow if it runs for a longer period of time.</li>
-</ul>
-<h3 id="2what_are_activities">2.What are activities ?<a class="headerlink" href="#2what_are_activities" title="Permanent link">&para;</a></h3>
-<ul>
-<li>Activities contain the business logic of the user application. It is invoked via workflow and task queues. Task queues are used to store activities in a queue and a worker comes and picks up an activity to get it done.</li>
-</ul>
-<h3 id="3how_are_temporal_workflows_used_in_accuknox">3.How are temporal workflows used in AccuKnox ?<a class="headerlink" href="#3how_are_temporal_workflows_used_in_accuknox" title="Permanent link">&para;</a></h3>
-<ul>
-<li>There are various components in Accuknox such as Network, System, Anomaly Detection and Data protection and these components send logs to kafka topic.</li>
-<li>The role of the workflow comes here where there are specific workflows for each component and they continuously run, scanning for logs from kafka.</li>
-<li>The workflow runs without a pause since the logs from the specific components comes every second and it has to capture it and process the logs such that it can send it to different integration channels.</li>
-</ul>
+                <h2 id="policy_auto_discovery">Policy Auto Discovery<a class="headerlink" href="#policy_auto_discovery" title="Permanent link">&para;</a></h2>
+<p>Accuknox policy auto-discovery engine leverages the pod visibility provided by KubeArmor and Cilium to auto-generate network and system policies.</p>
+<p><img alt="Policy Discovery" src="../../assets/images/policy-discovery.png" /></p>
+<h3 id="using_policy_discovery">Using Policy Discovery<a class="headerlink" href="#using_policy_discovery" title="Permanent link">&para;</a></h3>
+<p>KnoxAutoPolicy Service is installed along with other control plane elements.</p>
+<div class="codehilite"><pre><span></span><code>kubectl apply -f https://raw.githubusercontent.com/accuknox/knoxAutoPolicy-deployment/6834f042b396bd4002bfaaf31a87f4b46af10442/k8s/deployment.yaml
+</code></pre></div>
+
+<h3 id="fetch_auto_discovered_policies">Fetch Auto Discovered Policies<a class="headerlink" href="#fetch_auto_discovered_policies" title="Permanent link">&para;</a></h3>
+<p>The auto discovered policies could be kept in a MySQL DB or can be created as simple YAML files in the knoxAutoPolicy service pod. There is a <a href="https://github.com/accuknox/explorer-charts/blob/main/get_discovered_yamls.sh">script provided</a> that can identify the knoxAutoPolicy service pod and pull the discovered policies.</p>
+<div class="codehilite"><pre><span></span><code>./get_discovered_yamls.sh
+</code></pre></div>
+
+<p>Sample output:</p>
+<div class="codehilite"><pre><span></span><code><span class="err">❯</span> <span class="o">./</span><span class="n">get_discovered_yamls</span><span class="o">.</span><span class="n">sh</span>
+<span class="n">Downloading</span> <span class="n">discovered</span> <span class="n">policies</span> <span class="n">from</span> <span class="n">pod</span><span class="o">=</span><span class="n">knoxautopolicy</span><span class="o">-</span><span class="mi">74</span><span class="n">f5b5d65b</span><span class="o">-</span><span class="n">tv7v7</span>
+<span class="n">Got</span> <span class="mi">9</span> <span class="n">cilium</span> <span class="n">policies</span> <span class="k">for</span> <span class="n">namespace</span><span class="o">=</span><span class="n">explorer</span> <span class="ow">in</span> <span class="n">file</span> <span class="n">cilium_policies_explorer</span><span class="o">.</span><span class="n">yaml</span>
+<span class="n">Got</span> <span class="mi">5</span> <span class="n">cilium</span> <span class="n">policies</span> <span class="k">for</span> <span class="n">namespace</span><span class="o">=</span><span class="n">kube</span><span class="o">-</span><span class="n">system</span> <span class="ow">in</span> <span class="n">file</span> <span class="n">cilium_policies_kube</span><span class="o">-</span><span class="n">system</span><span class="o">.</span><span class="n">yaml</span>
+<span class="n">Got</span> <span class="mi">2</span> <span class="n">cilium</span> <span class="n">policies</span> <span class="k">for</span> <span class="n">namespace</span><span class="o">=</span><span class="n">spire</span> <span class="ow">in</span> <span class="n">file</span> <span class="n">cilium_policies_spire</span><span class="o">.</span><span class="n">yaml</span>
+<span class="n">Got</span> <span class="mi">9</span> <span class="n">knox</span> <span class="n">policies</span> <span class="k">for</span> <span class="n">namespace</span><span class="o">=</span><span class="n">explorer</span> <span class="ow">in</span> <span class="n">file</span> <span class="n">knox_policies_explorer</span><span class="o">.</span><span class="n">yaml</span>
+<span class="n">Got</span> <span class="mi">5</span> <span class="n">knox</span> <span class="n">policies</span> <span class="k">for</span> <span class="n">namespace</span><span class="o">=</span><span class="n">kube</span><span class="o">-</span><span class="n">system</span> <span class="ow">in</span> <span class="n">file</span> <span class="n">knox_policies_kube</span><span class="o">-</span><span class="n">system</span><span class="o">.</span><span class="n">yaml</span>
+<span class="n">Got</span> <span class="mi">2</span> <span class="n">knox</span> <span class="n">policies</span> <span class="k">for</span> <span class="n">namespace</span><span class="o">=</span><span class="n">spire</span> <span class="ow">in</span> <span class="n">file</span> <span class="n">knox_policies_spire</span><span class="o">.</span><span class="n">yaml</span>
+</code></pre></div>
+
+<p>Internally the script using <code>kubectl cp</code> to copy the discovered YAML files from the knoxAutoPolicy service pods.</p>
                 
               
               
@@ -1586,6 +1635,41 @@
       
         
 <footer class="md-footer">
+  
+    <nav class="md-footer__inner md-grid" aria-label="Footer">
+      
+        
+        <a href="../kubearmor-install/" class="md-footer__link md-footer__link--prev" aria-label="Previous: Installing KubeArmor" rel="prev">
+          <div class="md-footer__button md-icon">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11h12z"/></svg>
+          </div>
+          <div class="md-footer__title">
+            <div class="md-ellipsis">
+              <span class="md-footer__direction">
+                Previous
+              </span>
+              Installing KubeArmor
+            </div>
+          </div>
+        </a>
+      
+      
+        
+        <a href="../../getting-started/agent-metrics/" class="md-footer__link md-footer__link--next" aria-label="Next: Agent Metrics" rel="next">
+          <div class="md-footer__title">
+            <div class="md-ellipsis">
+              <span class="md-footer__direction">
+                Next
+              </span>
+              Agent Metrics
+            </div>
+          </div>
+          <div class="md-footer__button md-icon">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M4 11v2h12l-5.5 5.5 1.42 1.42L19.84 12l-7.92-7.92L10.5 5.5 16 11H4z"/></svg>
+          </div>
+        </a>
+      
+    </nav>
   
   <div class="md-footer-meta md-typeset">
     <div class="md-footer-meta__inner md-grid">
