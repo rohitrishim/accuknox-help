@@ -24,9 +24,9 @@ git checkout accuknox-onprem-ui
 
 Step 1 : $yarn install
 
-Step 2 : Need to add the new API- base URL path (path to gateway) in two places in the project files..
-
-        a) LINE1: ui-app/app/src/constants/urls.ts
+Step 2 : Need to add the new API- base URL path (path to gateway) in two places in the below project files..
+      
+        a) LINE 1: ui-app/app/src/constants/urls.ts
 
         b) LINE 7: ui-app/platform-ui/src/api/custom.js
 
