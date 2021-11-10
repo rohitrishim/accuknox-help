@@ -76,7 +76,7 @@ nav:
       - "Installing Cilium": "open-source/cilium-install.md"
       - "What is KubeArmor": "open-source/what-is-kubearmor.md"
       - "Installing KubeArmor": "open-source/kubearmor-install.md"
-      - "Autogenerating Policies": "open-source/auto-policy-generation.md"
+      - "Auto Discovery of Policies": "open-source/auto-policy-generation.md"
 
   - "AccuKnox SaaS Components":
       - "Agent Metrics": "getting-started/agent-metrics.md"
