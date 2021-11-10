@@ -1,4 +1,53 @@
+## Prerequisites:  
+
+<b>Install below packages</b>
+ 
+    1. node version v12+  
+    2. npm  version  6+
+    3. Yarn version 1.17+
+
+<b>For your reference:</b>
+ 
+    1. https://nodejs.org/en/
+    2. https://yarnpkg.com/getting-started/install
+    3. https://docs.npmjs.com/cli/v7/commands/npm-install
+
+
+```sh
+git clone https://USERNAME:PASSWORD@github.com/accuknox/accuknox-onprem.git
+git checkout accuknox-onprem-ui
+```
+
+
 ## Steps to install Accuknox UI 
+
+Step 1 : $yarn install
+
+Step 2 : Need to add the new API- base URL path (path to gateway) in two places in the project files..
+
+        a) LINE1: ui-app/app/src/constants/urls.ts
+
+        b) LINE 7: ui-app/platform-ui/src/api/custom.js
+
+             Eg: const baseAPIPath = 'https://api-dev.accuknox.com'; 
+                  change the above api as per your Environment <https://api.example.com>
+
+Step 3 : $npm run build
+
+     3.1 :  <b>optional (Command to remove existing code)</b>
+
+            Eg: $gsutil -m rm -r gs://accuknox-ui/build/*
+
+Step 4: <b> Pushing build files from apps/build to GCP bucket(aws or azure bucket)  </b>
+
+            Eg: $gsutil -m cp -r app/build/* gs://accuknox-ui/build/
+
+
+<b>Note: Step 4 will vary for different cloud providers</b> 
+
+
+
+
 
 ```sh
 git clone https://USERNAME:PASSWORD@github.com/accuknox/accuknox-onprem.git
@@ -8,7 +57,9 @@ cd build
 
 Step 1 : Install nginx application on VM
 
-Step 2: Configure the certmanager(https)(eg: letsencrypt)
+Step 2: Configure the certmanager(https) 
+        
+            Eg: letsencrypt Tool
 
 Step 3: tar -xvf build.tar.gz
 
