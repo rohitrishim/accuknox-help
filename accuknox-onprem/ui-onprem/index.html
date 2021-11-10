@@ -75,7 +75,7 @@
     <div data-md-component="skip">
       
         
-        <a href="#steps_to_install_accuknox_ui" class="md-skip">
+        <a href="#prerequisites" class="md-skip">
           Skip to content
         </a>
       
@@ -1480,6 +1480,13 @@
     <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
       
         <li class="md-nav__item">
+  <a href="#prerequisites" class="md-nav__link">
+    Prerequisites:
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
   <a href="#steps_to_install_accuknox_ui" class="md-nav__link">
     Steps to install Accuknox UI
   </a>
@@ -1532,6 +1539,13 @@
     <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
       
         <li class="md-nav__item">
+  <a href="#prerequisites" class="md-nav__link">
+    Prerequisites:
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
   <a href="#steps_to_install_accuknox_ui" class="md-nav__link">
     Steps to install Accuknox UI
   </a>
@@ -1557,14 +1571,55 @@
                 
                   <h1>How to install?</h1>
                 
-                <h2 id="steps_to_install_accuknox_ui">Steps to install Accuknox UI<a class="headerlink" href="#steps_to_install_accuknox_ui" title="Permanent link">&para;</a></h2>
+                <h2 id="prerequisites">Prerequisites:<a class="headerlink" href="#prerequisites" title="Permanent link">&para;</a></h2>
+<p><b>Install below packages</b></p>
+<div class="codehilite"><pre><span></span><code><span class="mf">1.</span> <span class="n">node</span> <span class="n">version</span> <span class="n">v12</span><span class="o">+</span>  
+<span class="mf">2.</span> <span class="n">npm</span>  <span class="n">version</span>  <span class="mf">6</span><span class="o">+</span>
+<span class="mf">3.</span> <span class="n">Yarn</span> <span class="n">version</span> <span class="mf">1.17</span><span class="o">+</span>
+</code></pre></div>
+
+<p><b>For your reference:</b></p>
+<div class="codehilite"><pre><span></span><code><span class="mf">1.</span> <span class="n">https</span><span class="p">:</span><span class="o">//</span><span class="n">nodejs</span><span class="mf">.</span><span class="ow">or</span><span class="n">g</span><span class="o">/</span><span class="n">en</span><span class="o">/</span>
+<span class="mf">2.</span> <span class="n">https</span><span class="p">:</span><span class="o">//</span><span class="n">yarnpkg</span><span class="mf">.</span><span class="n">com</span><span class="o">/</span><span class="kr">get</span><span class="n">ting</span><span class="o">-</span><span class="n">started</span><span class="o">/</span><span class="n">install</span>
+<span class="mf">3.</span> <span class="n">https</span><span class="p">:</span><span class="o">//</span><span class="n">docs</span><span class="mf">.</span><span class="n">npmjs</span><span class="mf">.</span><span class="n">com</span><span class="o">/</span><span class="n">cli</span><span class="o">/</span><span class="n">v7</span><span class="o">/</span><span class="n">commands</span><span class="o">/</span><span class="n">npm</span><span class="o">-</span><span class="n">install</span>
+</code></pre></div>
+
+<div class="codehilite"><pre><span></span><code>git clone https://USERNAME:PASSWORD@github.com/accuknox/accuknox-onprem.git
+git checkout accuknox-onprem-ui
+</code></pre></div>
+
+<h2 id="steps_to_install_accuknox_ui">Steps to install Accuknox UI<a class="headerlink" href="#steps_to_install_accuknox_ui" title="Permanent link">&para;</a></h2>
+<p>Step 1 : $yarn install</p>
+<p>Step 2 : Need to add the new API- base URL path (path to gateway) in two places in the project files..</p>
+<div class="codehilite"><pre><span></span><code>    <span class="n">a</span><span class="p">)</span> <span class="n">LINE1</span><span class="p">:</span> <span class="n">ui</span><span class="o">-</span><span class="n">app</span><span class="o">/</span><span class="n">app</span><span class="o">/</span><span class="n">src</span><span class="o">/</span><span class="n">constants</span><span class="o">/</span><span class="n">urls</span><span class="o">.</span><span class="n">ts</span>
+
+    <span class="n">b</span><span class="p">)</span> <span class="n">LINE</span> <span class="mi">7</span><span class="p">:</span> <span class="n">ui</span><span class="o">-</span><span class="n">app</span><span class="o">/</span><span class="n">platform</span><span class="o">-</span><span class="n">ui</span><span class="o">/</span><span class="n">src</span><span class="o">/</span><span class="n">api</span><span class="o">/</span><span class="n">custom</span><span class="o">.</span><span class="n">js</span>
+
+         <span class="n">Eg</span><span class="p">:</span> <span class="k">const</span> <span class="n">baseAPIPath</span> <span class="o">=</span> <span class="s1">&#39;https://api-dev.accuknox.com&#39;</span><span class="p">;</span> 
+              <span class="n">change</span> <span class="n">the</span> <span class="n">above</span> <span class="n">api</span> <span class="k">as</span> <span class="n">per</span> <span class="n">your</span> <span class="n">Environment</span> <span class="o">&lt;</span><span class="n">https</span><span class="p">:</span><span class="o">//</span><span class="n">api</span><span class="o">.</span><span class="n">example</span><span class="o">.</span><span class="n">com</span><span class="o">&gt;</span>
+</code></pre></div>
+
+<p>Step 3 : $npm run build</p>
+<div class="codehilite"><pre><span></span><code> 3.1 :  <span class="nt">&lt;b&gt;</span>optional (Command to remove existing code)<span class="nt">&lt;/b&gt;</span>
+
+        Eg: $gsutil -m rm -r gs://accuknox-ui/build/*
+</code></pre></div>
+
+<p>Step 4: <b> Pushing build files from apps/build to GCP bucket(aws or azure bucket)  </b></p>
+<div class="codehilite"><pre><span></span><code>        Eg: $gsutil -m cp -r app/build/* gs://accuknox-ui/build/
+</code></pre></div>
+
+<p><b>Note: Step 4 will vary for different cloud providers</b> </p>
 <div class="codehilite"><pre><span></span><code>git clone https://USERNAME:PASSWORD@github.com/accuknox/accuknox-onprem.git
 git checkout accuknox-onprem-ui
 <span class="nb">cd</span> build
 </code></pre></div>
 
 <p>Step 1 : Install nginx application on VM</p>
-<p>Step 2: Configure the certmanager(https)(eg: letsencrypt)</p>
+<p>Step 2: Configure the certmanager(https) </p>
+<div class="codehilite"><pre><span></span><code>        Eg: letsencrypt Tool
+</code></pre></div>
+
 <p>Step 3: tar -xvf build.tar.gz</p>
 <p>Step 4: sudo cp -rvf build/* /usr/share/nginx/html/</p>
 <p>Step 5: Start the service</p>
