@@ -1698,19 +1698,19 @@
 </ul>
 <h2 id="policy_discovery_examples">Policy Discovery Examples<a class="headerlink" href="#policy_discovery_examples" title="Permanent link">&para;</a></h2>
 <h3 id="the_intersection_of_matched_labels">The intersection of matched labels<a class="headerlink" href="#the_intersection_of_matched_labels" title="Permanent link">&para;</a></h3>
-<p><img alt="Figure: 1" src="https://github.com/accuknox/accuknox-help/blob/main/docs_sample/images/figure1.png" />
+<p><img alt="Figure: 1" src="../../images/figure1.png" />
 Let's assume that there are three pods and two connections between them as shown in the above figure. From the network logs from it, the Auto Discovery does not discover the two distinct network policies; [Pod A -&gt; Pod C] and [Pod A -&gt; Pod C].</p>
 <p>Instead, since Pod A and Pod B have the intersection of the labels, which is 'group=alice', the knoxAutoPolicy discovers and generates a network policy that has the selector with matchLabels 'group=alice'. Finally, we can get one network policy that covers two distinct network flows [group=alice -&gt; Pod C].</p>
 <h3 id="the_aggregation_of_toports_rules_per_the_same_destination">The aggregation of toPorts rules per the same destination<a class="headerlink" href="#the_aggregation_of_toports_rules_per_the_same_destination" title="Permanent link">&para;</a></h3>
-<p><img alt="Figure: 2" src="https://github.com/accuknox/accuknox-help/blob/main/docs_sample/images/figure2.png" /></p>
+<p><img alt="Figure: 2" src="../../images/figure2.png" /></p>
 <p>Similar to the previous case, we can merge the multiple toPorts rules per each same destination. Let's assume that there are the source and destination pods and three different flows as shown in the above figure. In this case, the Auto Discovery does not generate three different network policies per each toPorts rule.</p>
 <p>More efficiently, the Auto Discovery discovers one network policy and has one matchLabel rule and three toPorts rules; port numbers are 443, 8080, and 80. From this merge, it can be enabled to produce a minimum network policy set covering maximum network flows.</p>
 <h3 id="the_trace_of_the_outdated_network_policy">The trace of the outdated network policy<a class="headerlink" href="#the_trace_of_the_outdated_network_policy" title="Permanent link">&para;</a></h3>
-<p><img alt="Figure: 3" src="https://github.com/accuknox/accuknox-help/blob/main/docs_sample/images/figure3.png" /></p>
+<p><img alt="Figure: 3" src="../../images/figure3.png" /></p>
 <p>Since the Auto Discovery can do the discovery job at the time intervals, there could be some overlapping. For example, as shown in the above figure, let's assume we discovered policy A and B at the time t1 and t2 respectively.</p>
 <p>However, policy B has the same toCIDRs rule as policy A does but a different toPorts rule. In this case, It updates policy B by merging the toPorts rule to the latest one, and then it marks policy A as outdated and puts the relevant latest policy name. Thus, users can retrieve only the latest network policies from the database.</p>
 <h2 id="auto_discovered_policies_dashboard"><strong>Auto Discovered Policies Dashboard</strong><a class="headerlink" href="#auto_discovered_policies_dashboard" title="Permanent link">&para;</a></h2>
-<p><img alt="Figure: 4" src="https://github.com/accuknox/accuknox-help/blob/main/docs_sample/images/figure4.png" /></p>
+<p><img alt="Figure: 4" src="../../images/figure4.png" /></p>
 <ul>
 <li>
 <p>You can filter Auto Discovered Policies using following filters:</p>
@@ -1740,21 +1740,21 @@ Let's assume that there are three pods and two connections between them as shown
 </li>
 <li>
 <p>Select one or more policies from the list
-    <img alt="Figure: 5" src="https://github.com/accuknox/accuknox-help/blob/main/docs_sample/images/figure5.png" />
+    <img alt="Figure: 5" src="../../images/figure5.png" />
     Note: Default screen will show all un-used policies.</p>
 </li>
 <li>
 <p>Click “<strong>Action</strong>” Button on the top right corner.
-    <img alt="Figure: 6" src="https://github.com/accuknox/accuknox-help/blob/main/docs_sample/images/figure6.png" />
+    <img alt="Figure: 6" src="../../images/figure6.png" />
     There are 3 Actions can be performed. (i) Apply (ii) Ignore (iii) Deselect all</p>
 </li>
 <li>
 <p>Click <strong>Apply</strong>. Then Policy will be applied to the cluster. Applied Policy will go to pending approval.
-    <img alt="Figure: 7" src="https://github.com/accuknox/accuknox-help/blob/main/docs_sample/images/figure7.png" /></p>
+    <img alt="Figure: 7" src="../../images/figure7.png" /></p>
 </li>
 <li>
 <p>Go to “Pending Approval” screen and Approve the policy.
-    <img alt="Figure: 8" src="https://github.com/accuknox/accuknox-help/blob/main/docs_sample/images/figure8.png" />
+    <img alt="Figure: 8" src="../../images/figure8.png" />
     Note: You need Administrative permission to approve policies.</p>
 </li>
 <li>
