@@ -1,8 +1,8 @@
-## Manage Policies
+## Policy Management Life Cycle
 
 Once you successfully onboarded the cluster. You are good to go.
 
-You can create policies from scratch to secure your cloud environment. You can also make use of a number of predefined policies from auto discovered policies and recommended policies.
+You can create policies from scratch to secure your cloud environment. You can also make use of auto discovered policies and a number of predefined recommended policies.
 
 ### **Overview**
 
@@ -15,7 +15,7 @@ You can create policies from scratch to secure your cloud environment. You can a
 4.  Approve Policy
     
 
-Create Policy Manually:
+### **Create Policy Manually:**
 
 From two screens you can create/Add Policies.
 
@@ -66,7 +66,18 @@ Define the basic parameters of the policy before adding the rules.
 -   Labels
     
     -   Labels are used to select specified endpoints (in most cases it will be pods) and nodes.
-        
+
+### **Create/Add Network Policy**
+
+To set up the network security policies select policy type to be Network-ingress or Network-egress when you define policy type. 
+
+select 'Create/Add Policy' -> 'Policy type' -> 'Network-ingress/Network-egress' 
+
+### **Create/Add Kubearmor(System) Policy**
+
+To set up the application security policies select policy type to be System when you define policy type. 
+
+select 'Create/Add Policy' → 'Policy type' -> 'System'
 
 ### **Add Rules**
 
@@ -104,7 +115,7 @@ You can also edit/delete the existing rules by accessing the three dots icon app
 3.  Click `Delete Policy`.
     
 
-### **Auto discovery of policies**
+### **Auto discovered policies**
 
 Auto Discovery is a policy recommendation system that suggests network and system policies based on the collected network and system logs respectively.
 
