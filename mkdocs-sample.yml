@@ -85,6 +85,7 @@ nav:
           - "What is Workspace Manager": "getting-started/workspace-manager.md"
           - "What is Channel Integration": "getting-started/channel-integration.md"
       - "Policy Management Life Cycle": "manage_policies/manage_policies.md"
+      - "Policies and Rules": "policies-and-rule/policies-and-rule.md"
       - "Auto Discovered Policies": "auto_discovery_of_policies/auto_discovery_of_policies.md"
       
 
