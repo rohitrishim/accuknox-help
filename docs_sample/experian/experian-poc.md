@@ -4,11 +4,11 @@
 ### 1. Backend Platform
  - Kubernetes cluster
  - Installing the backend software components in the kubernetes cluster
-   i. Setup Databases - MySQL, Pinot
-   ii. Setup Kafka
-   iii. Install Istio in Kubernetes
-   iv. Microservices
-   v. Setup Istio API Gateway (Internal)
+   1.  Setup Databases - MySQL, Pinot
+   2. Setup Kafka
+   3. Install Istio in Kubernetes
+   4. Microservices
+   5. Setup Istio API Gateway (Internal)
 
 ### 2. UI - Frontend
  - Setup a VM with Nginx as webserver and point to the HTML UI build
