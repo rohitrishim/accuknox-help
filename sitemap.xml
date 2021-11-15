@@ -231,6 +231,26 @@
          <changefreq>daily</changefreq>
     </url>
     <url>
+         <loc>https://accuknox.com/data-protection/s3/introduction/</loc>
+         <lastmod>2021-11-15</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
+         <loc>https://accuknox.com/data-protection/s3/requirements/</loc>
+         <lastmod>2021-11-15</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
+         <loc>https://accuknox.com/data-protection/s3/s3-audit-reporter-installation-guide/</loc>
+         <lastmod>2021-11-15</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
+         <loc>https://accuknox.com/data-protection/s3/setup-and-configure/</loc>
+         <lastmod>2021-11-15</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
          <loc>https://accuknox.com/extensions/code-hilite/</loc>
          <lastmod>2021-11-15</lastmod>
          <changefreq>daily</changefreq>
