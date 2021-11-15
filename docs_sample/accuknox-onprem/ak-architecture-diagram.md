@@ -1,0 +1,1 @@
+![Alt](../images/ak-architecture-diagram.png)

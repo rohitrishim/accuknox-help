@@ -67,47 +67,79 @@ extra:
 # Page tree
 nav:
   - "Home": "index.md"
-# - "Getting started": 
+# - "Getting started":
 #     - "What is Accuknox": "getting-started/what-is-accuknox.md"
 
-  - "Getting Started with Open Source Components":
+  - "Open Source Components":
+      - "AccuKnox Open Source": "open-source/open-source-accuknox.md"
       - "What is Cilium": "open-source/what-is-cilium.md"
       - "Installing Cilium": "open-source/cilium-install.md"
       - "What is KubeArmor": "open-source/what-is-kubearmor.md"
       - "Installing KubeArmor": "open-source/kubearmor-install.md"
-      - "Autogenerating Policies": "open-source/auto-policy-generation.md"
+      - "Auto Discovery of Policies": "open-source/auto-policy-generation.md"
 
-  - "Getting Started with AccuKnox Components":
+  - "AccuKnox SaaS Components":
       - "Agent Metrics": "getting-started/agent-metrics.md"
+      - "Logs and Triggers": "getting-started/Logs.md"
       - "Workspace Manager":
           - "What is Workspace Manager": "getting-started/workspace-manager.md"
           - "What is Channel Integration": "getting-started/channel-integration.md"
-
-
-  - "Accuknox deployment [on-premise]":
-    - "Pre-Requisites":
+      - "Manage Policies": "manage_policies/manage_policies.md"
+      - "Auto Discovered Policies": "auto_discovery_of_policies/auto_discovery_of_policies.md"
+      - "Data Security":
+        - "S3": 
+          - "Introduction" : "data-protection/s3/introduction.md"
+          - "Requirements" : "data-protection/s3/requirements.md"
+          - "Setup and Configure S3 Audit" : "data-protection/s3/setup-and-configure.md"
+          - "Audit Reporter Installation Guide" : "data-protection/s3/s3-audit-reporter-installation-guide.md"
+      
+  - "On-prem Deployment":
+    - "Support": "accuknox-onprem/support.md"
+    - "What is it?": "accuknox-onprem/what-is-ak-on-prem.md"
+    - "Accuknox Architecture":
+      - "Diagram": "accuknox-onprem/ak-architecture-diagram.md"
+      - "Purpose": "accuknox-onprem/ak-architecture-diagram-purpose.md"
+    - "Pre-requisites":
+      - "Hardware Pre-requisites": "accuknox-onprem/hw-req-pre-requisites.md"
       - "Istio": 
-          - "What is Istio?": "accuknox-onprem/istio.md"
-          - "How to deploy istio?": "accuknox-onprem/istio-deploy.md"
-      - "Percona - MySQL":
-          - "What is Percona-MySQL?": "accuknox-onprem/mysql.md"
-          - "How to deploy Percona-MySQL?": "accuknox-onprem/mysql-deploy.md"
-      - "Kafka":
-          - "What is Kafka?": "accuknox-onprem/kafka.md"
-          - "How to deploy Kafka?": "accuknox-onprem/kafka-deploy.md"
+        - "Purpose": "accuknox-onprem/istio-purpose.md"
+        - "How to install?": "accuknox-onprem/istio-install.md"
+        - "How to verify?": "accuknox-onprem/istio-verify.md"
+      - "MySQL":
+        - "Purpose": "accuknox-onprem/mysql-purpose.md"
+        - "How to install?": "accuknox-onprem/mysql-install.md"
+        - "How to verify?": "accuknox-onprem/mysql-verify.md"
+      - "Kafka":  
+        - "Purpose": "accuknox-onprem/kafka-purpose.md"
+        - "How to install?": "accuknox-onprem/kafka-install.md"
+        - "How to verify?": "accuknox-onprem/kafka-verify.md"
       - "Pinot":
-          - "What is Pinot?": "accuknox-onprem/pinot.md"
-          - "How to deploy Pinot?": "accuknox-onprem/pinot-deploy.md"
-    - "Accuknox core components": 
-        - "how to deploy?": "accuknox-onprem/core-components-deploy.md"
+        - "Purpose": "accuknox-onprem/pinot-purpose.md"
+        - "How to install?": "accuknox-onprem/pinot-install.md"
+        - "How to verify?": "accuknox-onprem/pinot-verify.md"
+    - "Accuknox core components":
+      - "Hardware Pre-requisites": "accuknox-onprem/hw-req-core-components.md" 
+      - "How to install?": "accuknox-onprem/core-components-install.md"
+      - "How to verify?": "accuknox-onprem/core-components-verify.md"
     - "Accuknox agents":
-        - "how to deploy?": "accuknox-onprem/agents-deploy.md"       
-    - "Accuknox UI":
-        - "UI deployment": "accuknox-onprem/ui-deploy.md"
-
-  - "Data Security":
-    - "S3": 
-      - "Introduction" : "data-protection/s3/introduction.md"
-      - "Requirements" : "data-protection/s3/requirements.md"
-      - "Setup and Configure S3 Audit" : "data-protection/s3/setup-and-configure.md"
-      - "Audit Reporter Installation Guide" : "data-protection/s3/s3-audit-reporter-installation-guide.md"
+      - "Hardware Pre-requisites": "accuknox-onprem/hw-req-agent.md"
+      - "How to install?": "accuknox-onprem/agents-install.md"
+      - "How to verify?": "accuknox-onprem/agents-verify.md"
+    - "Monitoring":
+      - "Prometheus and Grafana":
+        - "Hardware Pre-requisites": "accuknox-onprem/hw-req-prom-graf.md"
+        - "Purpose": "accuknox-onprem/prom-graf-purpose.md"
+        - "How to install?": "accuknox-onprem/prom-graf-install.md"
+        - "How to verify?": "accuknox-onprem/prom-graf-verify.md"
+    - "Logging":
+      - "Hardware Pre-requisites": "accuknox-onprem/hw-req-logging.md"   
+      - "ECK":
+        - "Purpose": "accuknox-onprem/eck-purpose.md"
+        - "How to install?": "accuknox-onprem/eck-install.md"
+        - "How to verify?": "accuknox-onprem/eck-verify.md" 
+      - "Loki":
+        - "Purpose": "accuknox-onprem/loki-purpose.md"
+        - "How to install?": "accuknox-onprem/loki-install.md"
+    - "On-prem UI":
+        - "Purpose": "accuknox-onprem/ui-onprem-purpose.md"
+        - "How to install?": "accuknox-onprem/ui-onprem.md"
