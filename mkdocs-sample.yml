@@ -87,8 +87,13 @@ nav:
       - "Policy Management Life Cycle": "manage_policies/manage_policies.md"
       - "Policies and Rules": "policies-and-rule/policies-and-rule.md"
       - "Auto Discovered Policies": "auto_discovery_of_policies/auto_discovery_of_policies.md"
+      - "Data Security":
+        - "S3": 
+          - "Introduction" : "data-protection/s3/introduction.md"
+          - "Requirements" : "data-protection/s3/requirements.md"
+          - "Setup and Configure S3 Audit" : "data-protection/s3/setup-and-configure.md"
+          - "Audit Reporter Installation Guide" : "data-protection/s3/s3-audit-reporter-installation-guide.md"
       
-
   - "On-prem Deployment":
     - "Support": "accuknox-onprem/support.md"
     - "What is it?": "accuknox-onprem/what-is-ak-on-prem.md"
