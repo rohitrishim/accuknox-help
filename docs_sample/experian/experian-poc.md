@@ -11,19 +11,19 @@
    5. Setup Istio API Gateway (Internal)
 
 ### 2. UI - Frontend
- - Setup a VM with Nginx as webserver and point to the HTML UI build
+ - Setup a VM with Nginx as webserver and point to the HTML [UI build](*)
 
 ### 3. S3 Data Audit POC
- 1. Setup 5 S3 buckets (5 for Data Bucket, atleast 1 bucket for logs).
- 2. Populate some files using the provided script.
- 3. Setup the S3 Audit Log Reporter Agent in a VM.
+ 1. [Setup 5 S3 buckets (5 for Data Bucket, atleast 1 bucket for logs).](*)
+ 2. [Populate some files using the provided script.](*)
+ 3. [Setup the S3 Audit Log Reporter Agent in a VM.](*)
  4. Configure the data buckets and logs buckets in YAML file.
 
 **Note:** Please install the pre-requisites below before proceeding with deploying the modules:
- - MySql Operator
- - Kafka Operator
- - Pinot Deployment Steps
- - Istio & it's gateway installation
+ - [MySql Operator](*)
+ - [Kafka Operator](*)
+ - [Pinot Deployment Steps](*)
+ - [Istio & it's gateway installation](*)
 ##  Architecture Diagram
 ![DP architecture](https://user-images.githubusercontent.com/88204255/141889558-f6b52e7e-4d2a-4797-973f-c594cb8ebdac.png)
 ## Data Protection
