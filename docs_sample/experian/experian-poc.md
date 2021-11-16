@@ -25,9 +25,9 @@
  - Pinot Deployment Steps
  - Istio & it's gateway installation
 ##  Architecture Diagram
-
+![DP architecture](https://user-images.githubusercontent.com/88204255/141889558-f6b52e7e-4d2a-4797-973f-c594cb8ebdac.png)
 ## Data Protection
-### Data-protection-management
+### 1. Data-protection-management
 1. Download tgz file of      data-protection-management
 ```
   data-protection-mgmt.tar.gz
@@ -44,7 +44,7 @@ helm upgrade --install data-protection- mgmt data-protection-mgmt.tar.gz –n ac
 ```
 kubectl get pods -n accuknox-dev-data-protection-mgmt
 ```
-### s3-audit-reporter-consumer
+### 2. s3-audit-reporter-consumer
 1. Download tgz file of s3-audit-reporter-consumer
 ```
 s3-audit-reporter-consumer-charts.tar.gz
@@ -61,7 +61,7 @@ helm upgrade --install s3-audit-reporter-consumer s3-audit-reporter- consumer-ch
 ```
 kubectl get pods -n accuknox-dev- s3-audit-reporter-consumer
 ```
-### agent-data-collector
+### 3. agent-data-collector
 1. Download tgz file of agent-data-collector
 ```
 agent-data-collector-charts.tar.gz
@@ -79,7 +79,7 @@ charts.tar.gz –n accuknox-dev- agent-data-collector
 ```
 kubectl get pods -n accuknox-dev- agent-data-collector
 ```
-### s3-audit-reporter
+### 4. s3-audit-reporter
 1. Download tgz file of s3-audit-reporter
 ```
 s3-audit-reporter-charts.tar.gz
@@ -110,7 +110,7 @@ kubectl apply –f dev-deployment.yaml–n [namespace]
 kubectl get pods -n [namespace]
 ```
 ## Data Pipeline
-### data-pipeline-api
+### 1. data-pipeline-api
 1. Download tgz file
 ```
 data-pipeline-api-charts.tar.gz
@@ -128,7 +128,7 @@ helm upgrade --install data-pipeline-api data-pipeline-api-charts.tar.gz –n ac
 kubectl get pods -n 
 accuknox-dev- datapippeline-api
 ```
-## datapipeline-temporal:
+### 2. datapipeline-temporal:
 1. Download tgz file
 ```
 datapipeline-temporal-charts.tar.gz
@@ -146,7 +146,7 @@ helm upgrade --install datapipeline-temporal datapipeline-temporal-charts.tar.gz
 kubectl get pods -n accuknox-dev- temporal
 ```
 # User Management
-### Keycloak:
+### 1. Keycloak:
 1. Download tgz file of keycloak-charts.tar.gz
 ```
 keycloak.tar.gz
@@ -163,7 +163,7 @@ helm upgrade --install keycloak keycloak-charts.tar.gz -n accuknox-dev- user-mgm
 ```
 kubectl get pods -n accuknox-dev-user-mgmt
 ```
-### user-management-service:
+### 2. user-management-service:
 1. Download tgz file of user-management-service
 ```
 user-management-service.tar.gz
@@ -176,7 +176,7 @@ Verify the installation of user-management-service [Pods status should be runnin
 ```
 kubectl get pods -n accuknox-dev-user-mgmt
 ```
-### UI
+### 3. UI
 1. Install nginx application on VM
 
 2. Configure the certmanager(https) (eg: letsencrypt)
