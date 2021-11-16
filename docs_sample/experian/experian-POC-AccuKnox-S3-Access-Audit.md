@@ -28,11 +28,11 @@ Run upload_files.sh for each buckets:
 ```
  | S. No.  |  Bucket Name |  Command  |
  | :------------ |:---------------:|:---------------:|
- | 1. | ak-exp-poc-1-data | ./upload_files.sh ak-exp-poc-1-data |
- | 2. | ak-exp-poc-2-data | ./upload_files.sh ak-exp-poc-2-data |
- | 3. | ak-exp-poc-3-data | ./upload_files.sh ak-exp-poc-3-data |
- | 4. | ak-exp-poc-4-data | ./upload_files.sh ak-exp-poc-4-data |
- | 5. | ak-exp-poc-5-data | ./upload_files.sh ak-exp-poc-5-data |
+ | 1. | ak-exp-poc-1-data | `./upload_files.sh ak-exp-poc-1-data` |
+ | 2. | ak-exp-poc-2-data | `./upload_files.sh ak-exp-poc-2-data` |
+ | 3. | ak-exp-poc-3-data | `./upload_files.sh ak-exp-poc-3-data` |
+ | 4. | ak-exp-poc-4-data | `./upload_files.sh ak-exp-poc-4-data` |
+ | 5. | ak-exp-poc-5-data | `./upload_files.sh ak-exp-poc-5-data` |
     
 ## How To
 In order to setup AccuKnox S3 Access Audit perform the following steps:
