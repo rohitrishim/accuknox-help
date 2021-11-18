@@ -49,6 +49,32 @@ data:
       dataSourceProvider: AWS
       bucketRegion: us-west-2
 ```
+### Root section
+| Key | description | default  | required |
+| :----- | :----- | :------ | :------ |
+| apiVersion | Version of the S3 Audit Reporter API | None  | yes | 
+| type | S3AuditReporterBuckets | S3AuditReporterBuckets | yes |
+| data | Data section | None | yes |
+### Data section 
+| Key | description | default  | required |
+| :----- | :----- | :------ | :------ |
+| workspace | Your workspace | None | yes |
+| apiToken | API Token to use with Accuknox Control Plane | None | yes |
+| buckets | List of buckets to monitor | None | yes |
+### Buckets section
+| Key | description | default  | required |
+| :----- | :----- | :------ | :------ |
+| dataBucketName | Name of the bucket that holds the data objects | None | yes |
+| logsBucketName | Name of the bucket that holds the log objects | None | yes |
+| logPrefix | The path where the log files are stored in the logs bucket. | (empty) | yes |
+| dataBucketAccessKeyid | Access key ID for the Data Bucket | None | yes |
+| dataBucketSecretAccessKey | Secret Access Key for the Data Bucket | None | yes |
+| logBucketAccessKeyId | Access Key ID for the Logs bucket | None | yes |
+| log BucketSecretAccessKey | Secret Access Key for the Logs bucket | None | yes |
+| dataSourceProvider | Cloud Provider - AWS, GCP, AZURE | None | yes |
+| bucketRegion | Region where the bucket is configured at | None | yes |
+
+
 
 ## Installation
 Unzip AccuKnox S3 Audit Reporter 
